@@ -85,7 +85,7 @@ params:
     - "external-link.js"
     - "alt-title.js"
     - "header-link.js"
-  githubContentURL: "https://github.com/xiangyazi24/me/tree/master/content"
+  githubContentURL: "https://github.com/xiangyazi24/me/tree/master/content/"
   twitterImage: "/images/logo.png"
 
   # options for highlight.js (version, additional languages, and theme)
