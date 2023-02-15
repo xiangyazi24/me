@@ -1,0 +1,3 @@
+- in Vercel.json there are some redirection that I need to remove. 
+- remove the GitHub guest book.
+- figure out a way to allow visitor to edit, if they found errors.

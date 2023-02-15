@@ -1,6 +1,6 @@
-baseurl: "https://yihui.org/"
+baseurl: "https://xianghuang.me/"
 languageCode: "en-us"
-title: "Yihui Xie | 谢益辉"
+title: "Xiang Huang | 黄湘"
 theme: "hugo-ivy"
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 hasCJKLanguage: true
@@ -58,88 +58,19 @@ menu:
     - name: "简历"
       url: "/cn/vitae/"
       weight: 4
-    - name: "菜谱"
-      url: "/cn/recipe/"
-      weight: 5
     - name: "孩童"
       url: "/cn/kids/"
-      weight: 6
+      weight: 5
     - name: "事务"
       url: "/todo/"
-      weight: 7
+      weight: 6
     - name: "English"
       url: "/en/"
-      weight: 8
-  knitr:
-    - name: "Home"
-      url: "/knitr/"
-      weight: 1
-    - name: "Options"
-      url: "/knitr/options/"
-      weight: 2
-    - name: "Hooks"
-      url: "/knitr/hooks/"
-      weight: 3
-    - name: "Examples"
-      url: "/knitr/demo/"
-      weight: 4
-    - name: "FAQ"
-      url: "/knitr/faq/"
-      weight: 5
-    - name: "Github repo"
-      pre: "github"
-      url: "https://github.com/yihui/knitr"
-      weight: 6
-    - name: "Yihui Xie"
-      url: "/"
-      weight: 7
-  animation:
-    - name: "Home"
-      url: "/animation/"
-      weight: 1
-    - name: "Examples"
-      url: "/animation/example/"
-      weight: 2
-    - name: "Export"
-      url: "/animation/export/"
-      weight: 3
-    - name: "Resources"
-      url: "/animation/resources/"
-      weight: 4
-    - name: "Github repo"
-      pre: "github"
-      url: "https://github.com/yihui/animation"
-      weight: 5
-    - name: "Yihui Xie"
-      url: "/"
-      weight: 6
-  tinytex:
-    - name: "Home"
-      url: "/tinytex/"
-      weight: 1
-    - name: "FAQs"
-      url: "/tinytex/faq/"
-      weight: 2
-    - name: "R package"
-      url: "/tinytex/r/"
-      weight: 3
-    - name: "Hall of Pain"
-      url: "/tinytex/pain/"
-      weight: 4
-    - name: "中文文档"
-      url: "/tinytex/cn/"
-      weight: 5
-    - name: "Github repo"
-      pre: "github"
-      url: "https://github.com/rstudio/tinytex"
-      weight: 6
-    - name: "Yihui Xie"
-      url: "/"
       weight: 7
 
 params:
-  description: "Personal website of Yihui Xie; 谢益辉的个人网站"
-  footer: "&copy; [Yihui Xie](/) 2001 - {Year}"
+  description: "Personal website of Xiang; 黄湘的个人网站"
+  footer: "&copy; [Xiang Huang](/) 2001 - {Year}"
   customJS:
     - "comment-utils.js"
     - "fix-toc.js"
@@ -154,7 +85,7 @@ params:
     - "external-link.js"
     - "alt-title.js"
     - "header-link.js"
-  githubContentURL: "https://github.com/yihui/yihui.org/edit/master/content/"
+  githubContentURL: "https://github.com/xiangyazi24/me/tree/master/content"
   twitterImage: "/images/logo.png"
 
   # options for highlight.js (version, additional languages, and theme)
@@ -166,23 +97,12 @@ params:
     en:
       img: "/images/logo.png"
       url: "/"
-      alt: "Yihui Xie"
+      alt: "Xiang Huang"
       tag: ""
-    knitr:
-      img: "/knitr/images/knit-logo.png"
-      url: "/knitr/"
-      alt: "knitr logo"
-      tag: "knitr: elegant, flexible, and fast dynamic report generation with R"
-    tinytex:
-      img: "/images/logo-tinytex.png"
-      url: "/tinytex/"
-      alt: "tinytex logo"
-      tag: "TinyTeX: A lightweight and easy-to-maintain LaTeX distribution"
 
   author:
-    en: "Yihui Xie"
-    cn: "谢益辉"
-    animation: "Yihui Xie & Lijia Yu"
+    en: "Xiang Huang"
+    cn: "黄湘"
 
   lang:
     edit:
