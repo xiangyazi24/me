@@ -5,6 +5,7 @@ subtitle: "Module 1: Recursion Review " # only for html output
 author: "Xiang Huang"
 date: "`r Sys.Date()`"
 output:
+  output: hugodown::md_document()
   tufte::tufte_html:
     toc: true
   tufte::tufte_handout:
