@@ -70,7 +70,7 @@ menu:
 
 params:
   description: "Personal website of Xiang; 黄湘的个人网站"
-  footer: "&copy; [Xiang Huang](/) 2001 - {Year}"
+  footer: "&copy; [Xiang Huang](/) 2023 - {Year}"
   customJS:
     - "comment-utils.js"
     - "fix-toc.js"
