@@ -5,4 +5,5 @@
 - incase I forget, I host things on netify. They seems to use only Hugo tempalte (That is not true. You can use whatever.) But the netify.toml file specify that we use Hugo.
 - Something about redirection. https://sergiodxa.com/articles/vercel/setup-redirect  The redirection happen in vercel.json file.
 - successfully use https://giscus.app/.
+- I found that I need to compile/build the website before I can deploy it. Then here comes the question, where can I find the built website?
 
