@@ -7,4 +7,5 @@
 - successfully use https://giscus.app/.
 - I found that I need to compile/build the website before I can deploy it. Then here comes the question, where can I find the built website?
 - I add mathajax support! https://geoffruddock.com/math-typesetting-in-hugo/
+- adding mathjax thoerem environment.
 

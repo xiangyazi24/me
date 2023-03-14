@@ -1,10 +1,9 @@
 ---
 title: Testing Math 
 date: '2023-03-14'
-slug: CN-Math-Test
+slug: math-test
 mathjax: true
 ---
-
 
 I am writing my big theorem here with the following wonderful equation
 
