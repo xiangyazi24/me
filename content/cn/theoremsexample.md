@@ -9,7 +9,6 @@ I am writing my big theorem here with the following wonderful equation
 
 \\[\int_a^b f(x) = F(b)-F(a)\\]
 
-$\int_a^b f(x) = F(b)-F(a)$
 I can then write very complicated math!
 
 \\[ 
