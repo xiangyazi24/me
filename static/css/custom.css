@@ -111,6 +111,64 @@ span.hash-note::before { content: "　# "; }
   margin-bottom: 47px;
 }
 
+/* code */
+code.has-jax {
+    -webkit-font-smoothing: antialiased;
+    background: inherit !important;
+    border: none !important;
+    font-size: 100%;
+}
+
+
+.theorem {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+}
+.theorem:before {
+    content: "Theorem.";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.lemma {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+}
+.lemma:before {
+    content: "Lemma.";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.proof {
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+}
+.proof:before {
+    content: "Proof.";
+    font-style: italic;
+}
+.proof:after {
+    content: "\25FC";
+    float:right;
+}
+
+.definition {
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+}
+.definition:before {
+    content: "Definition.";
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
 @media screen and (max-width: 960px) {
   h1, h2, h3, h4, h5, h6 {
     margin: 2em auto 1.5em auto;
@@ -170,53 +228,6 @@ span.hash-note::before { content: "　# "; }
     border-left: none;
     padding-left: 10px;
   }
-}
-
-.theorem {
-    display: block;
-    margin: 12px 0;
-    font-style: italic;
-}
-.theorem:before {
-    content: "Theorem.";
-    font-weight: bold;
-    font-style: normal;
-}
-
-.lemma {
-    display: block;
-    margin: 12px 0;
-    font-style: italic;
-}
-.lemma:before {
-    content: "Lemma.";
-    font-weight: bold;
-    font-style: normal;
-}
-
-.proof {
-    display: block;
-    margin: 12px 0;
-    font-style: normal;
-}
-.proof:before {
-    content: "Proof.";
-    font-style: italic;
-}
-.proof:after {
-    content: "\25FC";
-    float:right;
-}
-
-.definition {
-    display: block;
-    margin: 12px 0;
-    font-style: normal;
-}
-.definition:before {
-    content: "Definition.";
-    font-weight: bold;
-    font-style: normal;
 }
 
 

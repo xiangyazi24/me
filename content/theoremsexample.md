@@ -41,7 +41,17 @@ A set $C$ is *convex* if for all $x,y \in C$ and for all $\alpha \in [0,1]$ the 
 </div>
 
 <div class="theorem">
-There are no natural numbers $N = (1, 2, 3, \ldots)$ $x$, $y$, and $z$ such that $x^n + y^n = z^n$, in which $n$ is a natural number greater than 2.
+
+There are no natural numbers
+
+$N = (1, 2, 3, \ldots)$
+
+$x$, $y$, and $z$ such that
+
+$x^n + y^n = z^n$, in which $n$
+
+is a natural number greater than 2.
+
 </div>
 
 
@@ -50,8 +60,17 @@ A set $C$ is *convex* if for all $x,y \in C$ and for all $\alpha \in [0,1]$ the 
 </div>
 
 <div class="proof">
-There are no natural numbers. Xiang is editing this place.
+
+There are no natural numbers
+
+$N = (1, 2, 3, \ldots)$
+
+$x$, $y$, and $z$ such that
+
+$x^n + y^n = z^n$, in which $n$
+
 is a natural number greater than 2.
+
 </div>
 
 
