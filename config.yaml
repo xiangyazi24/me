@@ -2,7 +2,6 @@ baseurl: "https://xianghuang.me/"
 languageCode: "en-us"
 title: "Xiang Huang | 黄湘"
 theme: "hugo-ivy"
-ignoreFiles: ["_cache$"]
 hasCJKLanguage: true
 enableEmoji: true
 footnotereturnlinkcontents: "↩"
