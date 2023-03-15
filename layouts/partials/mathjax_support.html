@@ -8,12 +8,13 @@
 
       macros: {
         RR: "{\\bf R}",
-        bold: ["{\\bf #1}", 1]
+        bold: ["{\\bf #1}", 1],
+        f: ["#1f(#2)", 2],
+        relax: ["{}"]
       },
       environments: {
         braced: ["\\left\\{", "\\right\\}"],
-        ABC: ['(#1)(#2)(', ')', 2, 'X'],
-        "\\f": ["#1f(#2)"]
+        ABC: ['(#1)(#2)(', ')', 2, 'X']
       }
     },
     options: {
