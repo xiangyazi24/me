@@ -254,6 +254,6 @@ content: "Lemma (" attr(text) ") ";
     font-style: normal;
 }
 .definition[text]:before {
-content: "definition (" attr(text) ") ";
+content: "Definition (" attr(text) ") ";
 }
 

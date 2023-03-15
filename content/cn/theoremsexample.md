@@ -5,6 +5,8 @@ slug: math-test-obs
 mathjax: true
 ---
 
+The follwoing are all the tests and setups I have. I now have everything I need to write math in md!
+
 I am writing my big theorem here with the following wonderful equation
 
 \\(\int_a^b f(x) = F(b)-F(a)\\)
@@ -76,4 +78,50 @@ Here we proof this very useful observation with x new def.
 <div class="definition mathjax", text="Big Idea">
 Here we define lasdkljflkj asdfljlj
 </div>
+
+<div class="proof mathjax">
+kjhkasdhf lklasjdflj ljljasd fljl alsdjfl $$\int_a^b f(x)= F(b) - F(a)$$.
+</div> 
+
+<div class="theorem mathjax" text='Fermat Last Theorem'>
+ljasldfj llkjasdf
+
+alsfjdla jsdflljasdfl jals
+</div> 
+
+<div class="obs mathjax" >
+lajsdlfj
+ljalsdfj 
+</div> 
+
+<div class="obs mathjax" text='Another Observation'>
+lajslfj ljasdlfj l aljsdflj jljasdlf 
+</div>  
+
+\begin{align}
+  A &= B \\\\
+    &= C
+\end{align}
+
+\begin{gather}
+    A = B \\\\
+    C = D
+\end{gather}
+
+$safjljsf$
+
+$$
+  \int_a^b f(x) = F(b)- F(a)
+$$
+
+<div class="lemma mathjax">
+adsllljlajsf
+lajsdflj
+</div> 
+
+<div class="lemma mathjax" text='haha'>
+ljal sjfdlajsd flj <strong>ljalsfjd </strong>
+</div> 
+
+
 

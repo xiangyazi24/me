@@ -11,5 +11,5 @@
 - The mathjax macro can be found under layout/partials/mathjax_support.
 - Mathjax does not support \relax, an no-op, but I hacked it by using {}.
 - Mathjax defines macro slightly different from kaTex. Read the document to understand the syntax for macro defining.
-
+- Sublime Text has this very strange bug that between two <div>, if no other line break exist, it can not regconize snippet extension. My snippet bold and em fails.
 
