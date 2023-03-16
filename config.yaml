@@ -118,9 +118,9 @@ blackfriday:
 markup:
   highlight:
     codeFences: true
-    style: base16-snazzy
+    style: monokai
     anchorLineNos: false
-    noClasses: true
+
   goldmark:
     renderer:
       unsafe: true

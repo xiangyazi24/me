@@ -36,7 +36,7 @@ $$
   \end{bmatrix}
 $$
 
-{{< mathjax/block >}}
+{{< block >}}
 
   \begin{bmatrix}
     a & b \\
@@ -44,9 +44,9 @@ $$
     e & f \\
   \end{bmatrix}
 
-{{< /mathjax/block >}}
+{{< /block >}}
 
-{{< mathjax/block >}}
+{{< block >}}
 \[
     \begin{bmatrix}
     a & b \\
@@ -54,7 +54,7 @@ $$
     e & f \\
   \end{bmatrix}
 \]
-{{< /mathjax/block >}}
+{{< /block >}}
 
   \begin{bmatrix}
       a & b \\\\
@@ -62,7 +62,7 @@ $$
       e & f \\\\
   \end{bmatrix}
 
-{{< mathjax/inline >}}
+{{< inline >}}
 $
     \begin{bmatrix}
     a & b \\
@@ -70,13 +70,13 @@ $
     e & f \\
   \end{bmatrix}
 $
-{{< /mathjax/inline >}}
+{{< /inline >}}
 
 
 
-{{< mathjax/block >}}
+{{< block >}}
 \[a \ne 0\]
-{{< /mathjax/block >}}
+{{< /block >}}
 
 
 
@@ -222,7 +222,7 @@ By doing all the things above. I think I now have a very good webpage template t
 
 
 
-```java {linenos=table,hl_lines=[199,"203-204"],linenostart=199}
+```java
 public class Graph {
 
     private Set<Node> nodes = new HashSet<>();

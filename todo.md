@@ -59,6 +59,11 @@ I can then use Sublime Text and Firefox side by side to edit things.
 - beg: begin.
 - cb: code block
 
+## Code Block
+
+- fail to change it to monokai theme.
+- Also find the all the fancy things I did for numbering do not show on the server side.
+
 ## Conclusion
 
 After the many attempts above, I’ve managed to get a very good web page template that I can use to write math
