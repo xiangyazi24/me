@@ -53,7 +53,7 @@
     type="text/javascript"></script>
 
 
-{{- if or (.Page.File.Dir "block") (.Page.File.Dir "inline") -}}
+{{- if or (.HasShortcode "block") (.HasShortcode "inline") -}}
 <style>
 .has-mathjax {
     visibility: hidden;
