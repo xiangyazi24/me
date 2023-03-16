@@ -13,4 +13,4 @@
 {{ if and (not .Params.disable_mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
 <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 {{ end }}
-{{ if .Params.mathjax }}{{ partial "mathjax_support.html" . }}{{ end }}
+

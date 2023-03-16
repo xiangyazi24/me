@@ -13,6 +13,7 @@
   }
 }
 body {
+  counter-reset: thm_counter, def_counter; /* Set 'thm_counter, def_counter' to 0. */
   width: auto;
   padding: 0;
 }
@@ -66,13 +67,8 @@ table {
   max-width: 100%;
   margin: auto;
 }
-pre .nohighlight {
-  background-color: transparent;
-}
-pre:hover {
-  white-space: pre-wrap;
-  word-break: break-all;
-}
+
+
 .hljs {
   background: #fcfcfc;
 }
@@ -169,33 +165,37 @@ code.has-jax {
   }
 }
 
-@media print {
-  del, footer, .masthead {
-    display: none;
-  }
-  body {
-    max-width: 700px;
-  }
-  .main {
-    margin-left: 0;
-    border-left: none;
-    padding-left: 10px;
-  }
-}
-
 
 .theorem {
     display: block;
     margin: 12px 0;
     font-style: italic;
+    counter-increment: thm_counter;
 }
 .theorem:before {
-    content: "Theorem.";
+
+    content: "Theorem " counter(thm_counter)".";
     font-weight: bold;
     font-style: normal;
 }
+
 .theorem[text]:before {
-content: "Theorem (" attr(text) ") ";
+content: "Theorem " counter(thm_counter)"." " (" attr(text) ") ";
+}
+
+.theorem-no-number {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+}
+
+.theorem-no-number:before {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.theorem-no-number[text]:before {
+content: "Theorem." " (" attr(text) ") ";
 }
 
 
@@ -203,28 +203,32 @@ content: "Theorem (" attr(text) ") ";
     display: block;
     margin: 12px 0;
     font-style: italic;
+    counter-increment: thm_counter;
 }
 .obs:before {
-    content: "Observation.";
+    content: "Observation " counter(thm_counter)".";
     font-weight: bold;
     font-style: normal;
 }
 .obs[text]:before {
-content: "Observation (" attr(text) ") ";
+content: "Observation " counter(thm_counter)"." " (" attr(text) ") ";
 }
+
 
 .lemma {
     display: block;
     margin: 12px 0;
     font-style: italic;
+    counter-increment: thm_counter;
 }
 .lemma:before {
-    content: "Lemma.";
+    content: "Lemma " counter(thm_counter)".";
     font-weight: bold;
     font-style: normal;
+
 }
 .lemma[text]:before {
-content: "Lemma (" attr(text) ") ";
+content: "Lemma " counter(thm_counter)"." " (" attr(text) ") ";
 }
 
 
@@ -247,13 +251,29 @@ content: "Lemma (" attr(text) ") ";
     display: block;
     margin: 12px 0;
     font-style: normal;
+    counter-increment: def_counter;
 }
 .definition:before {
-    content: "Definition.";
+    content: "Definition " counter(def_counter)".";
     font-weight: bold;
     font-style: normal;
+
 }
 .definition[text]:before {
-content: "Definition (" attr(text) ") ";
+content: "Definition " counter(def_counter)"." " (" attr(text) ") ";
 }
+
+
+
+FootnoteReturnLinkContents = "↑"
+// footnote link
+a[href^="#fn:"],
+// Back to footnote link
+a[href^="#fnref:"] {
+  text-decoration: none;
+  color: $orange;
+  font-family: monospace;
+}
+a[href^="#fn:"]:before{ content: '[' }
+a[href^="#fn:"]:after{ content: ']' }
 

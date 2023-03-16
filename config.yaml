@@ -117,7 +117,10 @@ blackfriday:
 
 markup:
   highlight:
-    codeFences: false
+    codeFences: true
+    style: base16-snazzy
+    anchorLineNos: false
+    noClasses: true
   goldmark:
     renderer:
       unsafe: true
