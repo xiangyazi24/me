@@ -53,7 +53,7 @@
     type="text/javascript"></script>
 
 
-{{- if or (.HasShortcode "mathjax/block") (.HasShortcode "mathjax/inline") -}}
+{{- if or (.HasShortcode "block") (.HasShortcode "inline") -}}
 <style>
 .has-mathjax {
     visibility: hidden;
