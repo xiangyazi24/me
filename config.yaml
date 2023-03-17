@@ -4,7 +4,7 @@ title: "Xiang Huang | 黄湘"
 theme: "hugo-ivy"
 hasCJKLanguage: true
 enableEmoji: true
-footnotereturnlinkcontents: "↩"
+footnotereturnlinkcontents: "↑"
 rssLimit: 10
 
 permalinks:
@@ -57,15 +57,12 @@ menu:
     - name: "简历"
       url: "/cn/vitae/"
       weight: 4
-    - name: "孩童"
-      url: "/cn/kids/"
-      weight: 5
     - name: "事务"
       url: "/todo/"
-      weight: 6
+      weight: 5
     - name: "English"
       url: "/en/"
-      weight: 7
+      weight: 6
 
 params:
   description: "Personal website of Xiang; 黄湘的个人网站"
