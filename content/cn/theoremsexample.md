@@ -109,7 +109,7 @@ hahahahhahahahsdf alsjdfljasfdljla asdfjlajsdf
 
 
 <div class="theorem" text='Prime numbers'>
-All odd numbers are prime.
+All prime number are odd except 2.
 </div>
 
 <div class="proof mathjax">
