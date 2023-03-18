@@ -17,6 +17,12 @@ menu:
     - name: "English"
       url: "/en/"
       weight: 1
+    - name: "Quantum"
+      url: "/quantum/"
+      weight: 1
+    - name: "Math"
+      url: "/math/"
+      weight: 1
     - name: "中文"
       url: "/cn/"
       weight: 2
@@ -30,7 +36,51 @@ menu:
     - name: "English"
       url: "/en/"
       weight: 2
+    - name: "English"
+      url: "/en/"
+      weight: 3
+    - name: "Quantum"
+      url: "/quantum/"
+      weight: 4
+    - name: "Math"
+      url: "/math/"
+      weight: 5
     - name: "主页"
+      url: "/"
+      weight: 6
+  Math:
+
+    - name: "English"
+      url: "/en/"
+      weight: 1
+    - name: "Quantum"
+      url: "/quantum/"
+      weight: 1
+    - name: "Math"
+      url: "/math/"
+      weight: 1
+    - name: "中文"
+      url: "/cn/"
+      weight: 2
+    - name: "Homepage"
+      url: "/"
+      weight: 3
+
+  Quantum:
+
+    - name: "English"
+      url: "/en/"
+      weight: 1
+    - name: "Quantum"
+      url: "/quantum/"
+      weight: 1
+    - name: "Math"
+      url: "/math/"
+      weight: 1
+    - name: "中文"
+      url: "/cn/"
+      weight: 2
+    - name: "Homepage"
       url: "/"
       weight: 3
 
@@ -82,3 +132,17 @@ markup:
       autoHeadingIDType: blackfriday
   tableOfContents:
     startLevel: 1
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: monokai
+    tabWidth: 4

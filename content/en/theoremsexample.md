@@ -3,6 +3,7 @@ title: Testing Math
 date: '2023-03-14'
 slug: math-test-obs
 math: mathjax
+slug: en-math
 disable_highlight: false
 ---
 
@@ -222,7 +223,7 @@ $$
 By doing all the things above. I think I now have a very good webpage template to write math.
 
 
-```java {.myclass linenos=table,hl_lines=[3,"5-6"],linenostart=1}
+```java 
 public class Graph {
 
     private Set<Node> nodes = new HashSet<>();
@@ -235,105 +236,15 @@ public class Graph {
 }
 ```
 
-- [ ] a task list item
-- [ ] list syntax required
-- [ ] incomplete
-- [x] completed
-- [ ] asfdsaf 
-- [ ] asdfsa
-
-- [ ] jalsdfj jl
-- [ ] aslfjlja 
-- [ ] asfdlkjaljsdf
-- [ ] asdlfjalsjdf 
-- [ ] alsdfjlajs f
-
-| people | money |
-| ------------- | ------------- |
-| dlkjsdjf | ljasjdfljaslfd |
-| asdfjlajs | sldkfjalsjf |
-
-Better table:
-
-{{<table "table table-striped table-bordered">}}
-| askfdhkajhfd |   colum head   | sadfhkajshdf |    asdfasdfasfdas    |
-|   Column 1   |                |   Column 2   |       Column 3       |
-|--------------|----------------|--------------|----------------------|
-| fasfdasdf    | asdfjsaflk     | safdasfd     | sfasfdasfd           |
-| asdffsadasdf | asdfasdf       | sadfasdf     | asdfasd              |
-| asdfasdf     | sadfasd        | asdfasdf     | sadfsadf             |
-| asdfajsldkfj | asldfjlkj      | alksjdflkaj  | asdfljaslkdfj        |
-| asdfasdfklj  | asjdflkja      | asdfklajsdfl | aksldfjkaljsdf       |
-| asdfjalksjdf | asdlfkjalksjdf | asdfjlasjdf  | sadfljasfkdlasdfasdf |
-| dsfasfd      | safdasdf       | asdfas       | sadfasdfffasfda      |
-{{</table>}}
-
-
-| askfdhkajhfd |   colum head   | sadfhkajshdf |    asdfasdfasfdas    |
-|   Column 1   |                |   Column 2   |       Column 3       |
-|--------------|----------------|--------------|----------------------|
-| fasfdasdf    | asdfjsaflk     | safdasfd     | sfasfdasfd           |
-| asdffsadasdf | asdfasdf       | sadfasdf     | asdfasd              |
-| asdfasdf     | sadfasd        | asdfasdf     | sadfsadf             |
-| asdfajsldkfj | asldfjlkj      | alksjdflkaj  | asdfljaslkdfj        |
-| asdfasdfklj  | asjdflkja      | asdfklajsdfl | aksldfjkaljsdf       |
-| asdfjalksjdf | asdlfkjalksjdf | asdfjlasjdf  | sadfljasfkdlasdfasdf |
-|              |                |              |                      |
-
-|        sadfkl        |   Column 2asdfjalkjs   |   adfkalsjdf   |  asdjfkha |
-|----------------------|------------------------|----------------|-----------|
-| Cell 1-1sdkjfhaksjdh | Cell 1-2asdkjfhkahsdf  | asdfkjhaksjdfh | kahsdfkha |
-| Cell 2-1asdkjfhkaj   | Cell 2-2aksjdfhkajshdf | aksdfhskjdh    | askdfhkajh          |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 add the newest version. 
 Not Updated on the website?
 
 ## Test Video
 Here I plugin a video.
 
+{{< video "../../static/video/Finite_State_Automata.mp4" "my-FSA" >}}
 
 {{< youtube id="spUNpyF58BY" >}}
-
 
 
 [^1]: Some footnote here.

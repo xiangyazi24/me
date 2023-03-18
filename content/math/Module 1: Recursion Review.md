@@ -1,31 +1,14 @@
 ---
-title: "CSC 482: Algorithms and Computation"
-runningheader: "Recursion Review " # only for pdf output
-subtitle: "Module 1: Recursion Review " # only for html output
-author: "Xiang Huang"
-date: "`r Sys.Date()`"
-output:
-  tufte::tufte_html:
-    toc: true
-  tufte::tufte_handout:
-    citation_package: natbib
-    latex_engine: xelatex   
-link-citations: yes
-urlcolor: blue
+title: Recursion Review
+date: '2023-03-17'
+math: mathjax
 ---
-
-```{r setup, include=FALSE}
-library(tufte)
-# invalidate cache when the tufte version changes
-knitr::opts_chunk$set(cache.extra = packageVersion('tufte'))
-options(htmltools.dir.version = FALSE)
-```
 
 # Introduction
 
 Recursion is a commonly used, yet often difficult to grasp problem solving technique. Recursion itself is not an algorithm, but a process that can be implemented as part of an algorithm. The notion of recursion sometimes conjures up mental images like the one shown below, which is reminiscent of what one might see when two mirrors are placed so they are facing each other, allowing an image to be reflected back and forth indefinitely:
 
-![](pic/recursion.png){width="563" height="450"}  
+![](/CSC482/pic/recursion.png){width="563" height="450"}  
 
 We may think about solving a problem recursively during the process of problem decomposition, where we are trying to break a complex problem into smaller, less complex sub-problems that are easier to solve. For certain types of problems we may find that we can repetitively decompose a problem such that each sub-problem is really just a smaller version of the larger problem. In those cases, recursion may be an excellent way to solve those problems. The notion of a larger problem being repetitively broken down into similar but smaller problems is encapsulated in the diagram above.
 
@@ -43,7 +26,7 @@ The Fibonacci sequence is a famous mathematical sequence:
 
 If squares whose sides measure individual Fibonacci numbers (except 0) are created and arranged as shown in the following diagram, a spiral that is found throughout nature can be drawn:
 
-![](pic/fibonacci_spiral_320.png){width="320" height="202"}      
+![](/CSC482/pic/fibonacci_spiral_320.png){width="320" height="202"}      
 
 Furthermore, for any consecutive pair of Fibonacci numbers, if you divide the greater number by the lesser number; e.g., $\frac{13}{8}$, you will get a decimal value that is very close to the Golden Ratio, an irrational number approximately equal to $1.61803...$
 
@@ -59,7 +42,7 @@ In plain English, any given Fibonacci number is equal to the sum of the previous
 
 To see how recursion might be used to find the $n$th Fibonacci number, you would begin at $n$, then you need to compute $F(n-1)$ and $F(n-2)$. To compute $F(n-1)$ you would compute $F(n-2)$ and $F(n-3)$ , and to compute $F(n-2)$ you would compute $F(n-3)$ and $F(n-4)$, and so on, until $n = 1$ and $n=0$, whose Fibonacci number are given by definition. So the first and second Fibonacci number serves as a base case. You can see the computation of $F(6)$ in the following picture. 
 
-![](pic/fib_tree.png){width="500"     }    
+![](/CSC482/pic/fib_tree.png){width="500"     }    
 
 
 
@@ -74,7 +57,7 @@ To find the GCD of two integers A and B:
 3. Write A in quotient remainder form (A = B·Q + R)
 4. Find GCD(B,R) using the Euclidean Algorithm since GCD(A,B) = GCD(B,R)
 
-```{python}
+```python
 def gcd(a, b):
     if a == 0:
         return b
@@ -116,7 +99,7 @@ In this example, finding that GCD(72, 58) = 2 might appear to be in error since 
 ## The Towers of Hanoi
 The Towers of Hanoi is a classic problem or puzzle that appears in many CS textbooks. Given 3 pegs labeled A, B, and C, and a tower of N disks arranged on peg A such that the disks are stacked in descending order of diameter, as shown in the following diagram:
 
-![](pic/Towers_of_Hanoi.png){width="500"}
+![](/CSC482/pic/Towers_of_Hanoi.png){width="500"}
 
 The problem is to move all N disks from peg A to another peg (peg C, for example) such that the following rules are always obeyed:
 
@@ -141,7 +124,7 @@ Once disk 1 has been moved to peg C (the spare peg), we have solved the simplest
 
 Generalizing the algorithm above is necessary to prevent problems that will arise if we specify pegs by name. We don't really care so much where we move the disks so long as we obey the rules of the problem. Either peg B or peg C can be used as the spare peg, as needed, and at times we may need to use peg A as a spare as well. So for each move we need to specify the source peg, the destination peg, and the spare peg, along with the number of disks to move. A generalized solution in Python might look something like this:
 
-````{python eval=FALSE}
+````python
 ## move n disk from "source (s)" peg to "destinate (t)" peg 
 ## with the help of "helper (h)" peg
 def Hanoi(n, s, t, h):
@@ -172,7 +155,7 @@ _Given a 8x8 chessboard, place 8 queens on the chessboard such that no queen can
 
 Put another way, no queen may share a row, column, or diagonal with another queen. The diagram below shows one possible solution to this problem:
 
-![](pic/eight-queens.png){width="282" height="282"} 
+![](/CSC482/pic/eight-queens.png){width="282" height="282"} 
 
 Other solutions are possible, but the problem only requires that we find a solution, it doesn't matter which one.
 
@@ -209,8 +192,8 @@ Conceptually, the process for placing the queens is easy to understand. What may
 
 The recursive portion of a recursive solution the the 8 Queens problem can be described in pseudocode as shown below. The framework of representing the chessboard and the queens, as well as a function for determining whether a placement is safe or not, have been omitted for brevity.
 
-::: {.fullwidth}
-```{r eval=FALSE}
+
+```c 
 Begin at row = 0, col = 0, N = 8 (where N = one dimension of the chessboard)
 
 function placeQueen(row, col)
@@ -233,7 +216,6 @@ function placeQueen(row, col)
   // queen cannot be placed safely in any row in current column
   return False
 ```
-:::
 
 One thing to note about a recursive backtracking solution such as this one is the efficiency of the algorithm. Since N = 8 in this case, we would expect the most efficient solution will require only 8 queen placements, one placement per queen. However, with backtracking there will be some trial and error involved before the solution is found, and this will result in a number of attempted queen placements that is greater than 8. The exact number of attempted placements will depend on several factors, including:
 
@@ -349,7 +331,7 @@ Practically speaking, a recursive algorithm involves a method or function that c
 
 A simple example will illustrate how the structure of a recursive method uses the stack frame. The following example uses a recursive algorithm to compute the $3$rd Fibonacci number, and uses a technique known as the box trace technique to show how the stack frame is used. The code for the recursive method is as follows:
 
-```{python eval=FALSE}
+```python
 def fib(n)
 {
     if (n <= 1)
@@ -361,7 +343,7 @@ def fib(n)
 
 There are 2 base cases for this algorithm, which correspond to the first two Fibonacci numbers, 0 and 1. (Recall that the first two Fibonacci numbers must be pre-defined, since you need to already have at least two numbers in order to compute the next number in the sequence.) Every other case for n > 1 is thus a recursive case. The diagram below shows how the box trace technique might be used to represent the stack frame as the algorithm's execution is manually traced. Keep in mind that the stack frame actually would just look like a single column, as records are pushed onto and popped off the stack. I have expanded the stack frame sideways to better illustrate both the past and current changes to the local variables and return values.
 
-![](pic/box_trace.png){width="600"}
+![](/CSC482/pic/box_trace.png)
 
 In reality, for this example the stack frame would have at most 3 records, since each recursive call will eventually be replaced by a return value when one recursive call hits a base case. Following each row in the diagram from left to right shows chronologically how each of the 3 records changes as the algorithm progresses. When both recursive calls in the first record have been replaced by literal values, the recursion is over, and the computed value can be returned.
 
@@ -389,7 +371,7 @@ In some cases, when a recursive solution contains more than one recursive call, 
 
 Most of the time when we write a recursive algorithm we have a method that directly calls itself. This is an example of **direct recursion**. It is also possible to have one method call another method, which in turn calls the first method. This is an example of **indirect recursion**, since in this case no method directly calls itself. Any number of methods could lie between the initial method call and the method that eventually calls the initial method. A simple example of indirect recursion is an algorithm that traverses a directory structure in a file system, as shown in the following pseudocode:
 
-```{r eval=FALSE}
+```c
 displayDirectoryContents(Directory d)
 {
     if d is a valid Directory
@@ -417,7 +399,7 @@ Tail recursion, sometimes called "tail call", is a form of recursion where the l
 
 **Standard Recursion**
 
-```{c eval=FALSE}
+```c
 int factorial(int n)
 {
     int r;
@@ -431,7 +413,7 @@ int factorial(int n)
 }
 ```
 **Tail Recursion**
-```{c eval=FALSE}
+```c
 int factorial(int n)
 {
     return tail_factorial(1, n);

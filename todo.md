@@ -1,3 +1,9 @@
+# Constructing My Second Personal Homepage via Hugo
+
+## Things I did to modify Yihui’s Website 
+
+It took me quite some time to get familiar with everything. Now I know how to manipulate a Hugo site!
+
 - in Vercel.json there are some redirection that I need to remove.
 - remove the GitHub guest book.
 - figure out a way to allow visitor to edit, if they found errors.
@@ -43,7 +49,7 @@ The current easy way to solve bibliography problem is to use footnote. I can’t
 
 I can then use Sublime Text and Firefox side by side to edit things. 
 
-## List of snippet I create
+## List of snippet I create in Sublime Text
 
 - thm: for theorem 
 - thmn: theorem with no numbering
@@ -58,6 +64,48 @@ I can then use Sublime Text and Firefox side by side to edit things.
 - ctrl + shift + m: block math square brackets. Need to escape the inner line breaker. 
 - beg: begin.
 - cb: code block
+- youtube: insert a youtube video.
+- video: insert a “local” video.
+- cd: code with some settings.
+
+## Math 
+
+To use Mathjax or KaTex, we just need to add
+
+```yaml
+---
+math: mathjax
+---
+```
+
+or 
+
+```yaml
+---
+math: katex
+---		
+```
+
+## 
+
+## Table Entering 
+
+Sublime Text has this `Table Editor` plugin that makes entering table very similar to Org in Emacs.
+
+To start, just type `table` then a TAB. You might need to go to the command list `ctrl +shift + P` to enable Table Editor for the file type or for the view.
+
+- More operations can be found [here](https://github.com/SublimeText-Markdown/TableEditor). 
+- and [here](https://brettterpstra.com/2015/04/22/sublime-text-tips-for-markdown-table-editing/).
+
+One thing I haven’t figure out is how to finish editing the table. Each time I get one empty line left at the end of the table. So I have to do `shift + alt + up` to remove it.
+
+
+
+## Replit Embeded
+
+It seems that using `iframe` to embed a Replit project does not work. Although [this page](https://docs.replit.com/hosting/embedding-repls) says so. It in fact required people have account or something according to [this page](https://docs.replit.com/teams-edu/embedding-projects).
+
+> *Please note that to access their project in an iframe, students must be added to the team and logged into their Replit account.*
 
 ## Code Block
 
@@ -70,6 +118,22 @@ I can then use Sublime Text and Firefox side by side to edit things.
 Nothing is set there, or at least I don’t understand how to make it work. So I will just remove it. 
 
 The file that controls subscription is in `menu-extra.html`.
+
+## Insert Youtube video
+
+``` html
+{{< youtube id="CMtN_LUpeLg" >}}
+
+```
+
+where id is the last part of a Youtube link: `https://www.youtube.com/watch?v=CMtN_LUpeLg `
+
+## Move .org to .me
+
+- To move my .org website to the current .me website, I just need to copy the whole site and throw everything under `/static`. It is pretty convenient! 
+- But the `index.html` must be moved to `/layout`
+
+- Also it seems that the root directory is then `/static`.
 
 ## Conclusion
 

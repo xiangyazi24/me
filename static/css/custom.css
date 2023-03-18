@@ -165,6 +165,20 @@ code.has-jax {
   }
 }
 
+@media print {
+  del, footer, .masthead {
+    display: none;
+  }
+  body {
+    max-width: 700px;
+  }
+  .main {
+    margin-left: 0;
+    border-left: none;
+    padding-left: 10px;
+  }
+}
+
 
 .theorem {
     display: block;
