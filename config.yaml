@@ -12,57 +12,27 @@ permalinks:
   en: "/:sections/:year/:month/:slug/"
 
 menu:
-  main:
-    - name: "About"
-      url: "/about/"
-      weight: 1
-    - name: "Blog"
-      url: "/en/"
-      weight: 2
-    - name: "关于"
-      url: "/cn/about/"
-      weight: 3
-    - name: "日志"
-      url: "/cn/"
-      weight: 4
   en:
-    - name: "Home"
-      url: "/"
-      weight: 1
-    - name: "About"
-      url: "/en/about/"
-      weight: 2
-    - name: "Blog"
-      url: "/en/"
-      weight: 3
-    - name: "Vitae"
-      url: "/en/vitae/"
-      weight: 4
-    - name: "Todo"
-      url: "/todo/"
-      weight: 5
-    - name: "中文"
-      url: "/cn/"
-      weight: 6
-  cn:
-    - name: "首页"
-      url: "/"
-      weight: 1
-    - name: "关于"
-      url: "/cn/about/"
-      weight: 2
-    - name: "日志"
-      url: "/cn/"
-      weight: 3
-    - name: "简历"
-      url: "/cn/vitae/"
-      weight: 4
-    - name: "事务"
-      url: "/todo/"
-      weight: 5
+
     - name: "English"
       url: "/en/"
-      weight: 6
+      weight: 1
+    - name: "中文"
+      url: "/cn/"
+      weight: 2
+    - name: "Homepage"
+      url: "/"
+      weight: 3
+  cn:
+    - name: "中文"
+      url: "/cn/"
+      weight: 1
+    - name: "English"
+      url: "/en/"
+      weight: 2
+    - name: "主页"
+      url: "/"
+      weight: 3
 
 params:
   description: "Personal website of Xiang; 黄湘的个人网站"
@@ -84,15 +54,12 @@ params:
   githubContentURL: "https://github.com/xiangyazi24/me/tree/master/content/"
   twitterImage: "/images/logo.png"
 
-  # options for highlight.js (version, additional languages, and theme)
-  highlightjsVersion: "11.7.0"
-  highlightjsLang: ["latex"]
-  highlightjsTheme: "base16/heetch-light"
+  # options for highlight.js (version, additional languages, and theme), no longer use highlight!
 
   logo:
     en:
       img: "/images/logo.png"
-      url: "/"
+      url: "/en"
       alt: "Xiang Huang"
       tag: ""
 
@@ -105,19 +72,9 @@ params:
       cn: "编辑"
     license:
       cn: "版权"
-    subscribe:
-      cn: "订阅"
 
-blackfriday:
-    extensionsmask: ["noIntraEmphasis"]
-    fractions: false
 
 markup:
-  highlight:
-    codeFences: true
-    style: monokai
-    anchorLineNos: false
-
   goldmark:
     renderer:
       unsafe: true

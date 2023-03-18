@@ -16,6 +16,11 @@
     },
 
     {
+      "source": "/pic",
+      "destination": "/static/org/pic"
+    },
+
+    {
       "statusCode": 301,
       "source": "/gh/(.*)",
       "destination": "https://github.com/xiangyazi24/$1"

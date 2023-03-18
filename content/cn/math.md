@@ -2,7 +2,7 @@
 title: Testing Math 
 date: '2023-03-14'
 slug: math-test
-mathjax: true
+math: mathjax
 ---
 
 I am writing my big theorem here with the following wonderful equation

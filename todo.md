@@ -63,6 +63,13 @@ I can then use Sublime Text and Firefox side by side to edit things.
 
 - fail to change it to monokai theme.
 - Also find the all the fancy things I did for numbering do not show on the server side.
+- Remove all setting about highlight.js. Now code block display successfully. 
+
+## Remove subscribe button
+
+Nothing is set there, or at least I don’t understand how to make it work. So I will just remove it. 
+
+The file that controls subscription is in `menu-extra.html`.
 
 ## Conclusion
 

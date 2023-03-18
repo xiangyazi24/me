@@ -3,6 +3,7 @@ title: Testing Math
 date: '2023-03-14'
 slug: math-test-obs
 math: mathjax
+disable_highlight: false
 ---
 
 The follwoing are all the tests and setups I have. I now have everything I need to write math in md!
@@ -221,8 +222,7 @@ $$
 By doing all the things above. I think I now have a very good webpage template to write math.
 
 
-
-```java
+```java 
 public class Graph {
 
     private Set<Node> nodes = new HashSet<>();
