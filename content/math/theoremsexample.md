@@ -3,12 +3,12 @@ title: Testing Math
 date: '2023-03-14'
 slug: math-test-obs
 math: mathjax
-slug: en-math
 disable_highlight: false
 ---
 
-The follwoing are all the tests and setups I have. I now have everything I need to write math in md!
+This page is for testing all kinds of setups I had for math blogging. I now have everything I need to write math in Markdown/HTML! 
 
+## Basic Math Mode
 I am writing my big theorem here with the following wonderful equation
 
 \\(\int_a^b f(x) = F(b)-F(a)\\)
@@ -80,8 +80,9 @@ $
 \[a \ne 0\]
 {{< /block >}}
 
+## Mathjax Macro
 
-
+The following formulas use some macroes. I aslo test cross references and equation tag/numbering.
 \\[ 
  \f\relax{x} = \int_{-\infty}^\infty 
     \f\hat\xi\,e^{2 \pi i \xi x} \tag{fancy}\label{eq:fancy}
@@ -101,9 +102,15 @@ a &=b \\\\
 
 \begin{braced} \frac{x}{y} \end{braced}
 
+
 \begin{ABC}{Z} xyz \end{ABC}
 
-Here I add a pointer to fancy \eqref{eq:fancy}.
+
+**Crossreference:** Here I add a pointer to fancy \eqref{eq:fancy}.
+
+## CSS Theorem Style and Automatic Theorem Counter
+I don't really know any CSS or HTML very well. But luckily I manage to make things work! I use different counters for theorems and for definitions. 
+
 <div class="theorem mathjax" text='New theorem'>
 hahahahhahahahsdf alsjdfljasfdljla asdfjlajsdf
 </div> 
@@ -119,7 +126,7 @@ is a natural number greater than 2.   There are no natural numbers $\mathbf{N} =
 </div>
 
 <div class="definition", text="Big Idea">
-Here we define lasdkljflkj asdfljlj
+Here we define lasdkljflkj asdfljlj.
 </div>
 
 <div class="lemma">
@@ -144,11 +151,11 @@ Here we proof this very useful observation with x new def.
 </div>
 
 <div class="definition mathjax", text="Big Idea">
-Here we define lasdkljflkj asdfljlj
+Here we define lasdkljflkj asdfljlj.
 </div>
 
 <div class="proof mathjax">
-kjhkasdhf lklasjdflj ljljasd fljl alsdjfl $$\int_a^b f(x)= F(b) - F(a)$$.
+kjhkasdhf lklasjdflj ljljasd fljl alsdjfl $$\int_a^b f(x)= F(b) - F(a).$$
 </div> 
 
 <div class="theorem mathjax" text='Fermat Last Theorem'>
@@ -223,7 +230,7 @@ $$
 By doing all the things above. I think I now have a very good webpage template to write math.
 
 
-```java 
+```java {.myclass linenos=table,hl_lines=[3,"5-6"],linenostart=1}
 public class Graph {
 
     private Set<Node> nodes = new HashSet<>();
@@ -236,15 +243,73 @@ public class Graph {
 }
 ```
 
+## Checklists
+[ ] a task list item
+[ ] list syntax required
+[ ] incomplete
+[x] completed
+[ ] asfdsaf 
+[ ] asdfsa
+
+- [ ] jalsdfj jl
+- [ ] aslfjlja 
+- [ ] asfdlkjaljsdf
+- [ ] asdlfjalsjdf 
+- [ ] alsdfjlajs f
+
+
+## Tables
+
+Sublime Text's Table Editor extension makes editing table very smooth for me. 
+| people | money |
+| ------------- | ------------- |
+| dlkjsdjf | ljasjdfljaslfd |
+| asdfjlajs | sldkfjalsjf |
+
+Better table:
+
+{{<table "table table-striped table-bordered">}}
+| askfdhkajhfd |   colum head   | sadfhkajshdf |    asdfasdfasfdas    |
+|   Column 1   |                |   Column 2   |       Column 3       |
+|--------------|----------------|--------------|----------------------|
+| fasfdasdf    | asdfjsaflk     | safdasfd     | sfasfdasfd           |
+| asdffsadasdf | asdfasdf       | sadfasdf     | asdfasd              |
+| asdfasdf     | sadfasd        | asdfasdf     | sadfsadf             |
+| asdfajsldkfj | asldfjlkj      | alksjdflkaj  | asdfljaslkdfj        |
+| asdfasdfklj  | asjdflkja      | asdfklajsdfl | aksldfjkaljsdf       |
+| asdfjalksjdf | asdlfkjalksjdf | asdfjlasjdf  | sadfljasfkdlasdfasdf |
+| dsfasfd      | safdasdf       | asdfas       | sadfasdfffasfda      |
+{{</table>}}
+
+
+| askfdhkajhfd |   colum head   | sadfhkajshdf |    asdfasdfasfdas    |
+|   Column 1   |                |   Column 2   |       Column 3       |
+|--------------|----------------|--------------|----------------------|
+| fasfdasdf    | asdfjsaflk     | safdasfd     | sfasfdasfd           |
+| asdffsadasdf | asdfasdf       | sadfasdf     | asdfasd              |
+| asdfasdf     | sadfasd        | asdfasdf     | sadfsadf             |
+| asdfajsldkfj | asldfjlkj      | alksjdflkaj  | asdfljaslkdfj        |
+| asdfasdfklj  | asjdflkja      | asdfklajsdfl | aksldfjkaljsdf       |
+| asdfjalksjdf | asdlfkjalksjdf | asdfjlasjdf  | sadfljasfkdlasdfasdf |
+|              |                |              |                      |
+
+|        sadfkl        |   Column 2asdfjalkjs   |   adfkalsjdf   |   asdjfkha  |
+|----------------------|------------------------|----------------|-------------|
+| Cell 1-1sdkjfhaksjdh | Cell 1-2asdkjfhkahsdf  | asdfkjhaksjdfh | kahsdfkha   |
+| Cell 2-1asdkjfhkaj   | Cell 2-2aksjdfhkajshdf | aksdfhskjdh    | asdfasfasdf |
+| asfjlkj              | asljdflj               | alsjdflj       | lkjaslfjd   |
+| asdfas               | asdf                   | asdf           | asdfsfd     |
+
+
 add the newest version. 
 Not Updated on the website?
 
 ## Test Video
 Here I plugin a video.
 
-{{< video "../../static/video/Finite_State_Automata.mp4" "my-FSA" >}}
 
 {{< youtube id="spUNpyF58BY" >}}
+
 
 
 [^1]: Some footnote here.

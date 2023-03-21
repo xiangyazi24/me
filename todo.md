@@ -135,6 +135,14 @@ where id is the last part of a Youtube link: `https://www.youtube.com/watch?v=CM
 
 - Also it seems that the root directory is then `/static`.
 
+## Index_ Page 
+
+Each index_.md page must leave empty. If it is not empty, then Hugo will not gather things under the same directory. 
+
+## Index.html and statics
+
+If you want to make a static Index.html, you should put it under /layout. And all the static materials should be in /static, including files, pictures etc. 
+
 ## Conclusion
 
 After the many attempts above, I’ve managed to get a very good web page template that I can use to write math

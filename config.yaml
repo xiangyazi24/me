@@ -12,77 +12,91 @@ permalinks:
   en: "/:sections/:year/:month/:slug/"
 
 menu:
+  main:
+    - name: "English"
+      url: "/en/"
+      weight: 1
+    - name: "Math"
+      url: "/math/"
+      weight: 2
+    - name: "Quantum"
+      url: "/quantum/"
+      weight: 3
+    - name: "中文"
+      url: "/cn/"
+      weight: 4
+    - name: "Homepage"
+      url: "/"
+      weight: 5
   en:
 
     - name: "English"
       url: "/en/"
       weight: 1
-    - name: "Quantum"
-      url: "/quantum/"
-      weight: 1
     - name: "Math"
       url: "/math/"
-      weight: 1
+      weight: 2
+    - name: "Quantum"
+      url: "/quantum/"
+      weight: 3
     - name: "中文"
       url: "/cn/"
-      weight: 2
+      weight: 4
     - name: "Homepage"
       url: "/"
-      weight: 3
+      weight: 5
   cn:
-    - name: "中文"
-      url: "/cn/"
+    - name: "English"
+      url: "/en/"
       weight: 1
-    - name: "English"
-      url: "/en/"
-      weight: 2
-    - name: "English"
-      url: "/en/"
-      weight: 3
-    - name: "Quantum"
-      url: "/quantum/"
-      weight: 4
     - name: "Math"
       url: "/math/"
-      weight: 5
-    - name: "主页"
+      weight: 2
+    - name: "Quantum"
+      url: "/quantum/"
+      weight: 3
+    - name: "中文"
+      url: "/cn/"
+      weight: 4
+    - name: "Homepage"
       url: "/"
-      weight: 6
+      weight: 5
+
   Math:
 
     - name: "English"
       url: "/en/"
       weight: 1
-    - name: "Quantum"
-      url: "/quantum/"
-      weight: 1
     - name: "Math"
       url: "/math/"
-      weight: 1
+      weight: 2
+    - name: "Quantum"
+      url: "/quantum/"
+      weight: 3
     - name: "中文"
       url: "/cn/"
-      weight: 2
+      weight: 4
     - name: "Homepage"
       url: "/"
-      weight: 3
+      weight: 5
 
   Quantum:
 
     - name: "English"
       url: "/en/"
       weight: 1
-    - name: "Quantum"
-      url: "/quantum/"
-      weight: 1
     - name: "Math"
       url: "/math/"
-      weight: 1
+      weight: 2
+    - name: "Quantum"
+      url: "/quantum/"
+      weight: 3
     - name: "中文"
       url: "/cn/"
-      weight: 2
+      weight: 4
     - name: "Homepage"
       url: "/"
-      weight: 3
+      weight: 5
 
 params:
   description: "Personal website of Xiang; 黄湘的个人网站"
@@ -109,7 +123,7 @@ params:
   logo:
     en:
       img: "/images/logo.png"
-      url: "/en"
+      url: "/"
       alt: "Xiang Huang"
       tag: ""
 
