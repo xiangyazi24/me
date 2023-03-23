@@ -16,87 +16,102 @@ menu:
     - name: "English"
       url: "/en/"
       weight: 1
-    - name: "Math"
+    - name: "Math ∩ CS"
       url: "/math/"
       weight: 2
     - name: "Quantum"
       url: "/quantum/"
       weight: 3
+    - name: "Course Notes"
+      url: "/course/"
+      weight: 4
     - name: "中文"
       url: "/cn/"
-      weight: 4
+      weight: 5
     - name: "Homepage"
       url: "/"
-      weight: 5
+      weight: 6
   en:
 
     - name: "English"
       url: "/en/"
       weight: 1
-    - name: "Math"
+    - name: "Math ∩ CS"
       url: "/math/"
       weight: 2
     - name: "Quantum"
       url: "/quantum/"
       weight: 3
+    - name: "Course Notes"
+      url: "/course/"
+      weight: 4
     - name: "中文"
       url: "/cn/"
-      weight: 4
+      weight: 5
     - name: "Homepage"
       url: "/"
-      weight: 5
+      weight: 6
   cn:
     - name: "English"
       url: "/en/"
       weight: 1
-    - name: "Math"
+    - name: "Math ∩ CS"
       url: "/math/"
       weight: 2
     - name: "Quantum"
       url: "/quantum/"
       weight: 3
+    - name: "Course Notes"
+      url: "/course/"
+      weight: 4
     - name: "中文"
       url: "/cn/"
-      weight: 4
+      weight: 5
     - name: "Homepage"
       url: "/"
-      weight: 5
+      weight: 6
 
   Math:
 
     - name: "English"
       url: "/en/"
       weight: 1
-    - name: "Math"
+    - name: "Math ∩ CS"
       url: "/math/"
       weight: 2
     - name: "Quantum"
       url: "/quantum/"
       weight: 3
+    - name: "Course Notes"
+      url: "/course/"
+      weight: 4
     - name: "中文"
       url: "/cn/"
-      weight: 4
+      weight: 5
     - name: "Homepage"
       url: "/"
-      weight: 5
+      weight: 6
 
   Quantum:
 
     - name: "English"
       url: "/en/"
       weight: 1
-    - name: "Math"
+    - name: "Math ∩ CS"
       url: "/math/"
       weight: 2
     - name: "Quantum"
       url: "/quantum/"
       weight: 3
+    - name: "Course Notes"
+      url: "/course/"
+      weight: 4
     - name: "中文"
       url: "/cn/"
-      weight: 4
+      weight: 5
     - name: "Homepage"
       url: "/"
-      weight: 5
+      weight: 6
 
 params:
   description: "Personal website of Xiang; 黄湘的个人网站"
