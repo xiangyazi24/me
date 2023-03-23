@@ -2,6 +2,7 @@
 title: "Lab: Subset Sum Problem and Knapsack problem"
 date: "2023-03-23"
 math: mathjax
+slug: partition_subset_sum
 ---
 We talk about Subset Sum Problem and Knapsack Problem in our lecture. We now attack the following simple variant of Subset Sum Problem. 
 
