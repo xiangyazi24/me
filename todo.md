@@ -1,6 +1,6 @@
 # Constructing My Second Personal Homepage via Hugo
 
-## Things I did to modify Yihui’s Website 
+## Things I did to modify Yihui’s Website
 
 It took me quite some time to get familiar with everything. Now I know how to manipulate a Hugo site!
 
@@ -35,7 +35,7 @@ It took me quite some time to get familiar with everything. Now I know how to ma
 
 [Another](https://stackoverflow.com/questions/64050359/how-to-use-markdown-syntax-to-write-math-in-hugo) Stack Overflow that claims to solve the double Slash Problem. Success! 
 
-## Add Number to Theorem environment. 
+## Add Number to Theorem environment.
 
 By using [CSS counter](https://css-tricks.com/almanac/properties/c/counter-increment/),, I manage to add auto numbering for theorems. 
 
@@ -67,8 +67,10 @@ I can then use Sublime Text and Firefox side by side to edit things.
 - youtube: insert a youtube video.
 - video: insert a “local” video.
 - cd: code with some settings.
+- yaml: header information
+- toc: create a table of content. You can put it anywhere. See this [link](https://ruddra.com/hugo-add-toc-anywhere/). 
 
-## Math 
+## Math
 
 To use Mathjax or KaTex, we just need to add
 
@@ -88,7 +90,7 @@ math: katex
 
 ## 
 
-## Table Entering 
+## Table Entering
 
 Sublime Text has this `Table Editor` plugin that makes entering table very similar to Org in Emacs.
 
@@ -135,7 +137,7 @@ where id is the last part of a Youtube link: `https://www.youtube.com/watch?v=CM
 
 - Also it seems that the root directory is then `/static`.
 
-## Index_ Page 
+## Index_ Page
 
 Each index_.md page must leave empty. If it is not empty, then Hugo will not gather things under the same directory. 
 
