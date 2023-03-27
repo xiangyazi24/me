@@ -24,7 +24,7 @@ This idea, turning a problem to another **solved** problem, is called reduction.
 
 ## Coding!
 Now it is time to do some coding! This is a Lab, not an assignment. So feel free to try whatever you want to try! One very helpful link is [this](https://leetcode.com/discuss/study-guide/1152328/01-Knapsack-Problem-and-Dynamic-Programming), where people discuss the implementation of classical Knapsack Problem. Here are a few things you want to do:
-1. If you haven't familiarize yourself with the *tabular method*, you can try the example there. (I was a little struggled doing the table,too.)
+1. If you haven't familiarize yourself with the *tabular method*, you can try the example there. (I was a little struggled doing the table, too.)
 2. Try an implementation with 2-D array (the table!)
 3. Try an implementation with 1-D array. (Scroll down and you will find people talk about it.)
 
