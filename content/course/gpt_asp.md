@@ -265,6 +265,122 @@ In the main loop, the `distance` variable is renamed to `dist[node]` for readabi
 
 The `shortest_path` function from the previous answer should still work without any modification.
 
+# BFS Backtrack Deletion
+*I ask ChatGPT to delete the edges stored in `prev`.*
+
+Person: 
+- Given dist, prev  as the returning result of the dijkstra_heap function. We consider deleting all the edge recorded in prev subgraph using a BFS algorithm. The function's signature looks like delete(graph, prev, t), where t is the starting vertex of hte algorithm. For any (u,v) in prev, delete it from graph.
+
+ChatGPT: 
+- Sure, here's an implementation of the `delete` function that takes in the graph `graph`, the previous node list `prev`, and the starting vertex `t`. It uses a breadth-first search (BFS) to traverse the previous node list and remove all the edges in the subgraph represented by `prev`.
+
+```python
+
+from collections import deque
+
+def delete(graph, prev, t):
+    # Initialize visited and queue for BFS
+    visited = set()
+    queue = deque([t])
+    visited.add(t)
+
+    # Traverse the previous node list with BFS
+    while queue:
+        u = queue.popleft()
+        for v in prev[u]:
+            if v not in visited:
+                visited.add(v)
+                queue.append(v)
+            # Remove the edge (u, v) from the graph
+            graph[u] = [(w, weight) for w, weight in graph[u] if w != v]
+
+    return graph
+```
+
+
+
+The function starts by initializing a set of visited nodes and a queue for the BFS. We add the starting vertex `t` to the visited set and enqueue it to the queue.
+
+We then traverse the previous node list with BFS. For each node `u` in the queue, we loop over all its previous nodes `v` and add them to the visited set if they haven't been visited before. We also remove the edge `(u, v)` from the graph by creating a new list of edges for node `u` that excludes the edge `(u, v)`.
+
+Finally, we return the modified graph.
+
+Person: 
+- add another parameter "s" to the above BFS algorithm. After the line "u = queue.popleft()", check if u is s, if true, exit the loop.
+
+ChatGPT: 
+- Sure, here's the modified implementation of the `delete` function that adds a parameter `s` and checks if the current node `u` is equal to `s`. If `u` is equal to `s`, we exit the loop early.
+
+```python
+
+from collections import deque
+
+def delete(graph, prev, t, s):
+    # Initialize visited and queue for BFS
+    visited = set()
+    queue = deque([t])
+    visited.add(t)
+
+    # Traverse the previous node list with BFS
+    while queue:
+        u = queue.popleft()
+        if u == s:
+            break
+        for v in prev[u]:
+            if v not in visited:
+                visited.add(v)
+                queue.append(v)
+            # Remove the edge (u, v) from the graph
+            graph[u] = [(w, weight) for w, weight in graph[u] if w != v]
+
+    return graph
+```
+
+
+
+We add the parameter `s` to the function's signature, which represents the node at which we want to stop the BFS. Inside the while loop, we check if `u` is equal to `s`. If it is, we exit the loop early by using the `break` statement.
+
+Note that this modification assumes that `s` is reachable from `t` in the graph. If `s` is not reachable from `t`, the function will continue to remove edges until the BFS has traversed the entire graph.
+
+Person: 
+- Instead of remoing (u,v) from the graph, we should remove (v, u) from the graph, since prev records predesessors.......
+
+ChatGPT: 
+- You're correct! Since the `prev` list records the predecessors, we should remove the edge `(v, u)` instead of `(u, v)` from the graph.
+
+Here's the modified implementation of the `delete` function that removes the edge `(v, u)` instead of `(u, v)`:
+
+```python
+
+from collections import deque
+
+def delete(graph, prev, t, s):
+    # Initialize visited and queue for BFS
+    visited = set()
+    queue = deque([t])
+    visited.add(t)
+
+    # Traverse the previous node list with BFS
+    while queue:
+        u = queue.popleft()
+        if u == s:
+            break
+        for v in prev[u]:
+            if v not in visited:
+                visited.add(v)
+                queue.append(v)
+            # Remove the edge (v, u) from the graph
+            graph[v] = [(w, weight) for w, weight in graph[v] if w != u]
+
+    return graph
+```
+
+
+
+Inside the `for` loop, we remove the edge `(v, u)` from the graph by creating a new list of edges for node `v` that excludes the edge `(u, v)`.
+
+Thanks for bringing this to my attention!
+
 # Putting Everything Together
 
 By now I have everything we need. Let's put them all together. There are very few lines of codes that I really need to write, in the case I need to do so, my GitHub Copilot plugin give me very good suggestion: I just need to type a few initial letters and then hit `Tab`.
