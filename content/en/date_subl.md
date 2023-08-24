@@ -10,7 +10,8 @@ title: My First Simple Sublime Text Plugin
 date: "2023-03-22"
 ---
 ```
-It is very annoying to enter the date: you have to look at the calendar if you are like me and you have to input "-" and numbers. So I want to insert the date automatically. How? There are[solutions](https: // forum.sublimetext.com / t / easiest - way - to - insert - date - time - with-a - single - keypress / 4134) out there. But eventually you will need to bind the Python script you write with key strikes. However, there are key maps more than I can remember all ready. I don't want to remember yet another key combination.
+
+It is very annoying to enter the date: you have to look at the calendar if you are like me and you have to input "-" and numbers. So I want to insert the date automatically. How? There are [solutions](https://forum.sublimetext.com/t/easiest-way-to-insert-date-time-with-a-single-keypress/4134) out there. But eventually you will need to bind the Python script you write with key strikes. However, there are key maps more than I can remember all ready. I don't want to remember yet another key combination.
 
 Here is what I want.
 1. Type `today`.
