@@ -13,7 +13,7 @@
   }
 }
 body {
-  counter-reset: thm_counter, def_counter; /* Set 'thm_counter, def_counter' to 0. */
+  counter-reset: thm_counter, def_counter, q_counter; /* Set 'thm_counter, def_counter', and question_counter to 0. */
   width: auto;
   padding: 0;
 }
@@ -277,6 +277,21 @@ content: "Lemma " counter(thm_counter)"." " (" attr(text) ") ";
 content: "Definition " counter(def_counter)"." " (" attr(text) ") ";
 }
 
+.qts{
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+    counter-increment: q_counter;
+}
+.qts:before {
+    content: "Question " counter(q_counter)".";
+    font-weight: bold;
+    font-style: normal;
+
+}
+.qts[text]:before {
+content: "Question " counter(q_counter)"." " (" attr(text) ") ";
+}
 
 
 FootnoteReturnLinkContents = "↑"
@@ -290,4 +305,12 @@ a[href^="#fnref:"] {
 }
 a[href^="#fn:"]:before{ content: '[' }
 a[href^="#fn:"]:after{ content: ']' }
+
+
+/* for the dark mode: */
+body.dark-mode, 
+body.dark-mode main * {
+    background: rgb(45, 45, 45);
+    color: #f5f5f5;
+}
 

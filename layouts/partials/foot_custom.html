@@ -4,7 +4,6 @@
   <span class="nav-next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> &rarr;{{ end }}</span>
 </nav>
 {{ end }}
-
 {{ partial "comments.html" . }}
 
 {{ partial "custom_js.html" (apply .Site.Params.customJS "print" "utils/" ".") }}

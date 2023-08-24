@@ -5,8 +5,6 @@ date: "2023-03-26"
 math: mathjax
 ---
 
-
-
 I teach Discrete Math every semester. Each time I really want to go deep into generating function, but I can't. So I often tell my students the only generating function they really need to know is this very boring one for $a_n=1$ for  all $n$ $$\frac{1}{1-x}=1+x + x^2 +x^3+\cdots.$$ Today let's have fun playing with it, by, well, just flipping it.
 
 ## Odd Compositions and Even Compositions

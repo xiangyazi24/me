@@ -1,5 +1,8 @@
 # Constructing My Second Personal Homepage via Hugo
 
+## Host
+- The domain is bought from Namecheap.
+- The website content is hosted on Netlify through GitHub!
 ## Things I did to modify Yihui’s Website
 
 It took me quite some time to get familiar with everything. Now I know how to manipulate a Hugo site!
@@ -69,6 +72,14 @@ I can then use Sublime Text and Firefox side by side to edit things.
 - cd: code with some settings.
 - yaml: header information
 - toc: create a table of content. You can put it anywhere. See this [link](https://ruddra.com/hugo-add-toc-anywhere/). 
+- quest: question with extra text
+- ques: question with no text
+
+
+In the future, I make want to support
+- multiple columns for pictures
+- dark mode
+- callouts 
 
 ## Math
 
@@ -144,6 +155,22 @@ Each index_.md page must leave empty. If it is not empty, then Hugo will not gat
 ## Index.html and statics
 
 If you want to make a static Index.html, you should put it under /layout. And all the static materials should be in /static, including files, pictures etc. 
+
+## Dark Mode
+1. https://yonkov.github.io/post/add-dark-mode-toggle-to-hugo/
+2. https://radu-matei.com/blog/dark-mode/
+
+The dark mode current is not very good. But it is what it is. files I need to touch.
+ 1. static/css/custom.css
+ 2. layouts/patials/toggle.html. This file is where the sun/moon logo is created. And the cressponding scripts.
+ 3. Also I need to modify layouts/patials/head_custom.html.
+    by adding 
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~html
+    {{ partial "toggle.html" . }}
+    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+## How to Test the Website
 
 ## Conclusion
 
