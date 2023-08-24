@@ -56,7 +56,7 @@ When I first sought jobs in academia, I was unsure if I could sustain myself. I 
 
 Nevertheless, I couldn't remain a postdoc. I had a family to support. Eventually, I secured a teaching position at UIS. I've finally found some stability. I tried applying for a grant this year and succeeded on the first try. Though there's an element of luck, these things aren't solely based on luck. I'm beginning to feel the essence of standing on my own two feet. Still, it's an extension of the work I did during my Ph.D. When I told Jack, "It's stemmed from your ideas," Jack responded, "But you have extended it so well." Regardless, it's a start.
 
-My research proposal also includes plans to visit other scholars. But these visits are more about collaboration than dependency. Everyone needs to exchange valuable ideas, especially someone like me, living in the middle of cornfields. I "have hands and feet", and I'm "as big as a bull", so I shouldn't need to rely on others. After all, "A grown man should stand on his own... why depend on others unnecessarily?"
+My research proposal also includes plans to visit other scholars. But these visits are more about collaboration than dependency. Everyone needs to exchange valuable ideas, especially someone like me, living in the middle of cornfields. I "have hands and feet", and I'm "as big as a bull", so there is nothing I should need to rely on others. 
 
 
 # Evaluation of My Writing
