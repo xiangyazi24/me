@@ -36,11 +36,4 @@ In the lecture I talk about the **wavefront** of memory when you did memoization
 3. A few Leetcode screenshots (Don't do too many).  
 
 
-### About the Report
-- Length: < 2 pages.
-- Format: 
-   *  Write a short description of the problem. 
-   *  Attempts you try and your findings, specifically, write something about the **wavefront** idea.
-   *  Any other thing you want to let me know. 
-
 
