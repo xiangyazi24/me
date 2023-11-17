@@ -57,6 +57,7 @@ I can then use Sublime Text and Firefox side by side to edit things.
 - thm: for theorem 
 - thmn: theorem with no numbering
 - thmt: theorem with text names (similarly for lem, def, obs)
+- thmnt:(todo: I need to have theorems with no number and no text.)
 - lem: for lemmas
 - def: for definitions
 - obs: for observations

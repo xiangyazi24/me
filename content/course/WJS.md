@@ -14,6 +14,8 @@ math: mathjax
 
 # Problem Statement
 
+Let's schedule some jobs again! We have had a lab on job scheduling problem before and this time we consider jobs with weights. 
+
 The Lab is excerpted from Section 12.3 of [Algorithm Design and Applications](https://canvas.projekti.info/ebooks/Algorithm%20Design%20and%20Applications%5BA4%5D.pdf) by Michael T. Goodrich and Roberto Tamassia. We also talked about weighted job scheduling in Kleinberg and Tardos. I will not repeat most of the contents in the books. I will just emphasis what I believe are the important aspects of the problem.
 
 - **Input:** A list of jobs $L$. A job $i$ is specified by a triple: ($s_i$, $f_i$, $b_i$) meaning the starting time, finishing time, and the benefit of performing the job $i$.
@@ -89,7 +91,7 @@ does a linear search for each job $i$, and you need to do it for every $i$. So t
 
 You can improve the above process by using binary search. See [this link](https://www.geeksforgeeks.org/weighted-job-scheduling-log-n-time/) for the full solution. Basically, since the jobs already sorted by finish time, you just need to binary search for the first job so that its **finish** time is earlier than the target job's **start** time.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~python linenumbers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~python 
 # A Binary Search based function to find the latest job
 # (before current job) that doesn't conflict with current
 # job.  "index" is index of the current job.  This function
@@ -113,10 +115,79 @@ def binarySearch(job, start_index):
         else:
             hi = mid - 1
     return -1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This method takes $O(\log(n))$ time to compute $pred(i)$ for each $i$. So in total it costs $O(n\log(n))$ time.
+This method takes $O(\log(n))$ time to compute $pred(i)$ for each $i$. So in total it costs $O(n\log(n))$ time. 
 
-### $O(n)$ Algorithm Once and For All
+Some implementations use in Python use
+<code> bisect</code> module for binary search. 
+
+
+### An $O(n)$ Algorithm Once and For All
 
 The previous solutions compute $pred(i)$ for each $i$ separately. We now introduce a method to compute $pred(i)$ for all $i$ all at once.
+
+In the *Algorithms and Their Applications*, a proposed way to do it 
+
+<blockquote>
+    In particular, given a listing of $L$ ordered by finish times and another listing, $L'$, ordered by start times, then a merging of these two lists, as in the <b>merge-sort</b> algorithm, gives us what we want.
+</blockquote>
+Then the author mentioned
+
+<blockquote>
+    The predecessor of request $i$ is literally the index of the predecessor in $L$ of the value, $s_i$, in $L'$. 
+</blockquote> (But this sentence is very hard to understand.)
+I processed it in this way:
+
+1. We have job $i$'s start time, $s_i$, in our hand. 
+2. Look at the merged list of $L$ and $L'$, find out $s_i$'s predecessor (but it need to be a finish time $e$). (If its predecessor is a start time, keep looking until you find an end time).
+3. Report the index, $j$, of the finish time. (Which job it is coming form.) That is, set <code>pred(i)=j</code>.
+
+In implementation, I modified the above process slightly.
+
+1. I don't really store the merged list to save space. But I do write out the merging process.
+2. The two cursors in the merging algorithm will keep a record on the index of the end time naturally. So I don't need to "keep looking until I find the end time".
+3. But I need to maintain a map between the start time and its original index before sorting. Note that I originally indexed the jobs by the end time.
+
+Index the job by end time.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~python
+# zip the three lists
+jobs = sorted([(e, s, p) 
+       for e, s, p 
+       in zip(endTime, startTime, profit)])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Bind the start time and the job index. 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~python
+# map between the start time and its original job index.
+jobs_by_start = sorted([
+         (s, index)
+        for index, (e, s, p) 
+        in enumerate(jobs)])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The merging process. Computing pred() for all jobs once and for all. 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~python
+# ends: "jobs" as in the above
+# starts: "jobs_by_start" as in the above
+# P: the pred() function, stored in a list. 
+def merge(self, ends, starts, P):
+        j = 0 # cursor for end time 
+        i = 0 # cursor for start time
+        while j < len(ends) and i < len(starts):
+            if ends[j][0] <= starts[i][0]:
+                j += 1
+            else:
+                # we might want to do i-1, if we want things starting from 0
+                P[starts[i][1]] = j - 1
+                i += 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Note that the algorithm does not work theoretically better than the previous binary searching algorithm, since it require the input to be sorted. 
+
+<div class="theorem mathjax" text='Linear Algorithm with Two Sorted Input List'> 
+    Given a list, $L$, of $n$ observation requests, provided in two sorted orders, one by nondecreasing finish times and one by nondecreasing start times, we can solve the telescope scheduling problem for $L$ in $O(n)$ time.
+</div> 
+
+The full implementation can be found [here](/src/WJS/wjs.py). I changed some variables' name for consistency with the current blog piece. 
