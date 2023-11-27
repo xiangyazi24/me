@@ -41,4 +41,4 @@ I don't sugguest topics. You need to pick you own topics. However, the following
 1. Recursive algorithms on Graphs and trees. 
 2. Proofs on graphs and trees. 
 
-The above list is not intended to be complete. Again, I expect that you will do you owe research to pick your own topic. 
+The above list is not intended to be complete. Again, I expect that you will do you own research to pick your own topic.    
