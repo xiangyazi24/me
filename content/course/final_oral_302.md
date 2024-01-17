@@ -1,7 +1,7 @@
 ---
 title: "CSC 302:Final Oral Presentation"
 date: "2023-11-21"
-slug: "csc302/presentation"
+slug: "csc302/final_oral"
 math: mathjax
 --- 
 # Purpose
