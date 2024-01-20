@@ -36,7 +36,7 @@ I don't sugguest topics. You need to pick you own topics. However, the following
 <strong>Theory of Computation</strong>
 1. Finite State Machine and Regular Expression.
 2. Stack Machine. 
-3. Product of two finite machine
+3. Product of two finite state machine
 4. Pigeonhole Principle and Pumping Lemma
 The above list is not intended to be complete. Again, I expect that you will do you own research to pick your own topic.
 
