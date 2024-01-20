@@ -63,9 +63,10 @@ One can consult the following picture for better understanding.
 ## Eliminate the $g()$ function:
 
 From the expression for $f(n)$, we can express $g(n-1)$ in terms of $f(n).$
-    $$ g(n-1) = \frac{f(n) - f(n-1) - f(n-2)}{2}. $$
-   
-Substituting this into the recurrence for \(g(n-1)\), we get:
+    $$ g(n-1) = \frac{f(n) - f(n-1) - f(n-2)}{2} $$
+and similarly for $g(n-2)$. 
+
+Substituting these into the recurrence for \(g(n-1)\), we get:
     $$ \frac{f(n) - f(n-1) - f(n-2)}{2} =\frac{f(n-1) - f(n-2) - f(n-3)}{2} + f(n-3). $$
 
 Rearranging and solving for $f(n)$, we finally get:
