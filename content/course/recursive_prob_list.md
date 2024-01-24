@@ -5,7 +5,7 @@ slug: ""
 math: mathjax
 ---
 
-One of students asked me to give him more problem to work on to learn recursion. I don't know why I could not think of any off top of my head. Maybe because I was tired after a long lecture! Here are some problems as requested. Ranked decreasingly by their difficulty.
+One of students asked me to give him more problems to work on to learn recursion. I don't know why I could not think of any off top of my head. Maybe because I was tired after a long lecture! Here are some problems as requested. Ranked increasingly by their difficulty.
 
 1. [Euclidean algorithm and Extended Euclidean algorithm](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm). One might say its faster to just do loops. But it is indeed a good problem on recursion anyway. 
 2. [Exponentiation by squaring](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) (The Successive Squaring Algorithm) for modular arithmetic.
