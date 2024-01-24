@@ -11,5 +11,5 @@ One of students asked me to give him more problems to work on to learn recursion
 2. [Exponentiation by squaring](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) (The Successive Squaring Algorithm) for modular arithmetic.
 3. Catalan number Recurrence. $C_0=0$ and $C_{n+1}=\displaystyle\sum_{i=0}^{n}C_i C_{n-i}$ for $n\geq 0$. And many other recurrence about Catalan number.
 4. [Derangement](https://en.wikipedia.org/wiki/Derangement). My personal favorite recursion and counting problem. $D(n)=(n-1)\cdot(D(n-1)+ D(n-2))$. 
-5. [Variation of Hanoi Tower Problems](http://www.cut-the-knot.org/recurrence/BiColorHanoi.shtml). Bi-color, 3-color, and more.  
+5. [Variation of Hanoi Tower Problems](http://www.cut-the-knot.org/recurrence/BiColorHanoi.shtml). Bi-color[[pdf](https://rmm.ludus-opuscula.org/PDF_Files/Chaugule_BicolorHanoi_37_48(4_2015)_low.pdf)], 3-color, and more.  
 6. [Colin Mallows's Recurrence on Golomb sequence](https://en.wikipedia.org/wiki/Golomb_sequence). $a(1) = 1$; $a(n+1) = 1 + a(n + 1 - a(a(n)))$. I had had a lot of fun deriving this recurrence. It lied somewhere in my old notes. I should share it some day. I don't have the trick to do the asymptotic analysis as Colin Mallows did. He associated that with golden ratio. This will be a very interesting topic to read more about. 
