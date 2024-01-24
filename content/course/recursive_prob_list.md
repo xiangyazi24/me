@@ -13,9 +13,3 @@ One of students asked me to give him more problems to work on to learn recursion
 4. [Derangement](https://en.wikipedia.org/wiki/Derangement). My personal favorite recursion and counting problem. $D(n)=(n-1)\cdot(D(n-1)+ D(n-2))$. 
 5. [Variation of Hanoi Tower Problems](http://www.cut-the-knot.org/recurrence/BiColorHanoi.shtml). Bi-color, 3-color, and more.  
 6. [Colin Mallows's Recurrence on Golomb sequence](https://en.wikipedia.org/wiki/Golomb_sequence). $a(1) = 1$; $a(n+1) = 1 + a(n + 1 - a(a(n)))$. I had had a lot of fun deriving this recurrence. It lied somewhere in my old notes. I should share it some day. I don't have the trick to do the asymptotic analysis as Colin Mallows did. He associated that with golden ratio. This will be a very interesting topic to read more about. 
-
-
-sereral things to do:
-1. solve the domino tromino problem. and think about how to do exponent fast. 
-2. search to find the robot problem I used to talk about recursion. 
-3. find the russian site tranlation for competitive programming.
