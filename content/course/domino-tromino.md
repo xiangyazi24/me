@@ -11,69 +11,69 @@ math: mathjax
 
 # Tiling a $2\times n$ Board with Dominoes and Trominoes
 
-I assigned [Leetcode 790](https://leetcode.com/problems/domino-and-tromino-tiling/description/) as a Lab to my students. In this problem, we are tasked with finding the number of ways to tile a $2\times n$ board using dominoes and trominoes. Many online resources do not explain the deduction of the recurrence very well. So I decide to write one here. 
+I assigned [Leetcode 790](https://leetcode.com/problems/domino-and-tromino-tiling/description/) as a Lab to my students. In this problem, we are tasked with finding the number of ways to tile a $2\times n$ board using dominoes and trominoes. Many online resources do not explain the deduction of the recurrence very well. So I decide to write one here.
 
 
 # Mutual Recursion
-It will be convenient to introduce another problem $g(x)$ defined as below to help us attack the problem. 
+It will be convenient to introduce another problem $g(x)$ defined as below to help us attack the problem.
 
 We define two functions to represent the number of tiling configurations:
 
 - $f(n)$: Number of ways to tile a $2\times n$ board.
 - $g(n)$: Number of ways to tile a $2\times n$ board with one of the grids in the first column missing.
 
-The phenomenon of two functions recursively call each other is called mutual recursion. In a way, the two functions help implementing each other. We will see that in a minute. 
+The phenomenon of two functions recursively call each other is called mutual recursion. In a way, the two functions help implementing each other. We will see that in a minute.
 
 # Recurrence Relations
 
 The recurrence relations for $f(n)$ and $g(n)$ are derived based on the ways to cover the first column of the board:
 
-## For $f(n)$:
+# For $f(n)$:
 
-1. Cover the first column with a vertically placed domino. This leaves a $2 \times (n-1)$ board.
-2. Cover the first column with two horizontally placed dominoes. This leaves a $2\times (n-2)$ board.
-3. Cover the first column with a tromino in two possible orientations, each leaving a configuration that fits $g(n-1)$.
-
-This gives us the relation:
-
-$$
-f(n) = f(n-1) + f(n-2) + 2g(n-1).
-$$
-
-Or one can see the following picture for a better visualization. 
-
-<img src="/CSC482/pic/domino-tromino/f(n).png" alt="your-image-description" style="border: 2px solid  gray;">
-
-## For $g(n-1)$:
-
-1. Place a domino to cover the remaining grid in the first column of a $2 \times (n-1)$ board with one grid missing. This leaves a configuration that fits $g(n-2)$.
-2. Place a tromino to cover the remaining grid in the first column. This leaves a standard $2 \times (n-3)$ board.
+1. Cover the first column with a vertically placed domino. This leaves a $2 \times(n - 1)$ board.
+2. Cover the first column with two horizontally placed dominoes. This leaves a $2\times(n - 2)$ board.
+3. Cover the first column with a tromino in two possible orientations, each leaving a configuration that fits $g(n - 1)$.
 
 This gives us the relation:
 
 $$
-g(n-1) = g(n-2) + f(n-3).
+f(n) = f(n - 1) + f(n - 2) + 2g(n - 1).
 $$
 
-One can consult the following picture for better understanding. 
+Or one can see the following picture for a better visualization.
 
-<img src="/CSC482/pic/domino-tromino/g(n).png" alt="your-image-description" style="border: 2px solid  gray;">
+<img src = "/CSC482/pic/domino-tromino/f(n).png" alt = "your-image-description" style = "border: 2px solid  gray;" >
+
+# For $g(n-1)$:
+
+1. Place a domino to cover the remaining grid in the first column of a $2 \times(n - 1)$ board with one grid missing. This leaves a configuration that fits $g(n - 2)$.
+2. Place a tromino to cover the remaining grid in the first column. This leaves a standard $2 \times(n - 3)$ board.
+
+This gives us the relation:
+
+$$
+g(n - 1) = g(n - 2) + f(n - 3).
+$$
+
+One can consult the following picture for better understanding.
+
+<img src = "/CSC482/pic/domino-tromino/g(n).png" alt = "your-image-description" style = "border: 2px solid  gray;" >
 
 
-## Eliminate the $g()$ function:
+# Eliminate the $g()$ function:
 
-From the expression for $f(n)$, we can express $g(n-1)$ in terms of $f(n).$
-    $$ g(n-1) = \frac{f(n) - f(n-1) - f(n-2)}{2} $$
-and similarly for $g(n-2)$. 
+From the expression for $f(n)$, we can express $g(n - 1)$ in terms of $f(n).$
+    $$ g(n - 1) = \frac{f(n) - f(n - 1) - f(n - 2)}{2} $$
+and similarly for $g(n - 2)$.
 
-Substituting these into the recurrence for $g(n-1)$, we get:
-    $$ \frac{f(n) - f(n-1) - f(n-2)}{2} =\frac{f(n-1) - f(n-2) - f(n-3)}{2} + f(n-3). $$
+Substituting these into the recurrence for $g(n - 1)$, we get:
+    $$ \frac{f(n) - f(n - 1) - f(n - 2)}{2} =\frac{f(n - 1) - f(n - 2) - f(n - 3)}{2} + f(n - 3). $$
 
 Rearranging and solving for $f(n)$, we finally get:
-    \\[ f(n) = 2f(n-1) + f(n-3). \\]
+    \\[f(n) = 2f(n - 1) + f(n - 3). \\]
 
 
-## Python Implementation
+# Python Implementation
 
  **Dynamic Programming with Memoization:**
 
@@ -81,7 +81,9 @@ Rearranging and solving for $f(n)$, we finally get:
 MOD = 10**9 + 7
 
 def f_dp(n):
-    if n < 3:
+    if n == 0:
+        return 0
+    if n == 1 or n== 2:
         return n
     if n == 3:
         return 5
