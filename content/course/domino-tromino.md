@@ -1,5 +1,5 @@
 ---
-title: "Leetcode 790: Mutual Recursion"
+title: "Leetcode 790: Mutual Recursion in A Tiling Problem"
 date: "2024-01-20"
 slug: "csc482/Domino-Tromino"
 math: mathjax
