@@ -5,7 +5,6 @@ slug: ""
 math: mathjax
 ---
 
-**PA3: Computing Large Power Modulo m**
 
 The successive squaring algorithm is a method to compute large power modulo m. We are going to implement it in this post. 
 
@@ -97,3 +96,5 @@ We know binary number are not so special. Now if your treat $b$ as a **ternary**
 # Test
 Try a = 7, b = 327, m = 853 to see what you get. (I made up these numbers just now. You can surely make up more tests. Use [Wolfram Alpha](https://www.wolframalpha.com/) to get quick results.)
 
+
+---
