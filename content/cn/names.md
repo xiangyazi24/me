@@ -26,10 +26,10 @@ math: mathjax
   <p> 太乙近天都，连山接海隅。
   <p> 白云回望合，青霭入看无。
   <p> 分野中峰变，阴晴众壑殊。
-  <p> 欲投人处宿，隔水问樵夫。
+  <p> 欲投人处宿，隔水<b>问樵</b>夫。
   <p>   
 </blockquote>
-高中时喜与友人登山。他那时最喜唐诗。每每读到好的，就圈出来，把他的书扔给我看。有时行至傍晚，山色无非类似，只是我们那边没有那么高的山而已。
+高中时喜与友人宗强登山。他那时最喜唐诗。每每读到好的，就圈出来，把他的书扔给我看。有时行至傍晚，山色无非类似，只是我们那边没有那么高的山而已。
 
 更不用说杨慎的《临江仙》了。小学的时候看三国演义的电视剧就听过的唱词。
 
@@ -40,22 +40,86 @@ math: mathjax
 </blockquote>
 高中语文课本苏轼上的《赤壁赋》：
 <blockquote>
-    况吾与子渔樵于江渚之上，侣鱼虾而友麋鹿，驾一叶之扁舟，举匏樽以相属。寄蜉蝣于天地，渺沧海之一粟。哀吾生之须臾，羡长江之无穷。挟飞仙以遨游，抱明月而长终。知不可乎骤得，托遗响于悲风。
+    况吾与子<b>渔樵</b>于江渚之上，侣鱼虾而友麋鹿，驾一叶之扁舟，举匏樽以相属。寄蜉蝣于天地，渺沧海之一粟。哀吾生之须臾，羡长江之无穷。挟飞仙以遨游，抱明月而长终。知不可乎骤得，托遗响于悲风。
 </blockquote>
 
 起中文名的意思，不过是希望他们知道，**就像他们的名字一样，他们有来处**。外国人的名字自然也有来处，很多出于圣经一类的，**我们不用凑他们的热闹**。
 
-日常读报，美国人喜推diversity, 难道我们自己的文化不也是一种diversity 吗？老美们并没有什么地方要求我们用“英文”名字，的确，在美国生活的阿拉伯人用的是他们自己的名字，印度人用的是他们自己的名字，俄罗斯人用的是他们自己的名字，为什么中国人就喜欢起那些看起来和自己的文化不沾边的英文名字呢。自己的名字都不用，多少有点文化上不自信的意思。我虽无力也无意推动国人们起中国名字，但在儿子们的起名上，总归是能自己决定的。即便是这样，还是经过了和妻子的一番争辩。她害我们的小孩别人喊都喊不对，会被孤立。最后妥协，加上了一个英文的中间名。中间名本来就可用可不用，算是最优解了。
+日常读报，美国人喜推diversity, 难道我们自己的文化不也是一种diversity 吗？老美们并没有什么地方要求我们用“英文”名字，的确，在美国生活的阿拉伯人用的是他们自己的名字，印度人用的是他们自己的名字，俄罗斯人用的是他们自己的名字，为什么中国人就喜欢起那些看起来和自己的文化不沾边的英文名字呢。自己的名字都不用，多少有点文化上不自信的意思。我虽无力也无意推动国人们起中国名字，但在儿子们的起名上，总归是能自己决定的。即便是这样，还是经过了和妻子的一番争辩。她害怕我们的小孩别人喊都喊不对，会被孤立。最后妥协，加上了一个英文的中间名。中间名本来就可用可不用，算是最优解了。
 
 有人会说用拼音做名字，外国人念起来不方便，或者说他们会念错。首先，名字是根本的东西，不是方不方便的问题。况且不要低估了老外学习的能力。他们念一点拼音，虽然多少有点怪异，但是对他们来说不是什么为难的事情。有人总是怕“麻烦他人”。但是美国人其实没有那么怕麻烦。经常有人叫我们重复小孩子的名字，他们也很努力地尽量去发音。开玩笑地说，世界大同，总得给他们一点学习新东西的机会。
 
 
-# ChatGPT Summary
-*I won't provide the full translation of the above writing because the translation is not very accurate this time. ChatGPT mentioned that "The article contains various cultural references and quotes from classic Chinese literature, which I've tried to convey meaningfully within the scope of a translation." By that it means it ignored those contents. Its summary is not bad, though.*
+# On the Necessity of Proper Naming
+
+## The Obscured Chinese Name
+
+The Chinese term "名" (name) mentioned by Confucius is quite complex, but today I am only concerned with "names". Yesterday, there was a shooting at the University of North Carolina at Chapel Hill, and the domestic media, without much verification, transliterated the victim's name. The translated name sounded strangely awkward. This is why I insist on writing my Chinese name on my website. I don't want others to guess my name. There is nothing about my Chinese name that makes me feel ashamed, no reason not to use it or let others know it. Furthermore, I don't feel Chinese is in any way inferior to English, so there's no reason not to use it. Thus, I don't quite understand why so many Chinese scholars' websites don't even mention their real names, not even as a simple note. Among the older generation of people who came to China, there are families who do not speak Chinese at home. I find this hard to do. Firstly, I am a native and can't speak English at home. Secondly, in this day and age, speaking English doesn't seem to have that special flair anymore. Moreover, if you want children to speak English, why practice at home? Which child in America would have trouble with English? They are immersed in it at school every day. What's more concerning is their Chinese proficiency. For most children, once they start school, their Chinese level declines, leading to the rise of various Chinese online courses targeting second-generation overseas Chinese, inevitably bombarding YouTube ads and social circles.
+
+Times change, circumstances differ. Against the backdrop of a growing national strength, the next generation of Chinese coming to America will likely find it hard to understand why the previous generations revered this country so much.
+
+## Sons' Names
+
+In the movie "Spirited Away", the girl originally named "千寻" enters a mystical world and is renamed "千" by Yubaba. In this hidden world, forgetting one's original name means forgetting one's true self, never to return to the real world. I've always wondered, what's the difference between "千" and "千寻"? In Russian literature, characters often have numerous nicknames and terms of endearment, so the difference between "千" and "千寻" seems negligible. I checked Wikipedia to clear up my confusion, but just looking at the Chinese characters themselves didn't help, as the film's title is written as "千と千尋の神隠し". It's all Chinese characters. Probably their kana are different. “千” is written as (せん), while “千寻” including her surname is “荻野 千尋 (おぎの ちひろ)”. Okay, finally a difference.
+
+In this "hidden world" of the United States, I gave my sons Chinese names, written in Pinyin, as "Wen Qiao" and "Wen Yu". The names are derived from Zhuang Yuanchen's "Shuju Zi Nei Pian" from the Ming Dynasty:
 
 <blockquote>
-    The article titled "必也正名" ("Rectification of Names") discusses the importance of preserving Chinese names, especially in foreign contexts like the United States. It questions why many Chinese scholars do not display their original names on their websites and delves into how the Chinese diaspora often adopts English names, seeing this as a form of cultural insecurity. The author talks about naming his sons with Chinese names, rooted in classical Chinese literature, as an assertion of cultural identity. The article also reflects on how the new generation of Chinese in a growing China might perceive America differently from their predecessors.
+    Enter the mountains to ask the woodcutter, go into the waters to ask the fisherman. How can a sage not learn! If saints only befriend those better than themselves, then there are no friends in the world. Only those who learn from everyone can truly teach the world.
 </blockquote>
+
+
+It's similar to the teaching "Among any three people walking, I will find something to learn from at least one of them" by Confucius; it is just something I read somewhere one day. Moreover, fishermen and woodcutters are common imagery in Chinese poetry.
+
+For example, "Mount Zhongnan" by Wang Wei:
+
+<blockquote>
+    Mount Zhongnan, close to the heavenly capital, joins the mountains to the sea's edge. White clouds come and go, blue mist too faint to see. The fields vary from peak to peak, sunny and shady places differ. Wishing to stay overnight with a person, I ask the woodcutter across the water.
+</blockquote>
+
+
+I loved mountaineering with my friend Zong Qiang in high school. He adored Tang poetry, often highlighting good ones and tossing his book to me. Sometimes, towards evening, the mountains seemed no different to the ones depicted in Wang Wei's poetry, only that ours weren't as high.
+
+Not to mention Yang Shen's "Immortal by the River":
+
+<blockquote>
+    Rolling eastward, the mighty Yangtze's waves wash away heroes. Right and wrong, success and failure, all turn to void. The green mountains remain, under many a sunset red. White-haired fishermen and woodcutters by the riverside, used to watch the autumn moon and spring breeze. A jar of turbid wine for joyous meetings. Countless affairs of past and present, all laughed away in conversation.
+</blockquote>
+
+
+Also, Su Shi's "Ode on the Red Cliff" from high school Chinese textbook:
+
+<blockquote>
+    Moreover, I and you, fishing and woodcutting on the river's islets, accompany fish and shrimp, befriend deer, drive a flat boat, offer a gourd of wine to each other. We're like mayflies in the vast universe, grains of sand in the vast ocean. Mourn our transient lives, envy the endless Yangtze. Travel with immortals, embrace the moon forever. Knowing sudden gains are impossible, we entrust our lingering echoes to the mournful wind.
+</blockquote>
+
+
+The meaning of giving them Chinese names is simply to let them know they have roots, just like their names. Foreigners' names also have origins, often from the Bible and the like, but we don't need to join their enthusiasm.
+
+Reading newspapers, Americans advocate diversity. Isn't our culture also a form of diversity? Americans don't require us to use "English" names. Indeed, Arabs living in America use their own names, Indians use theirs, Russians theirs, so why do Chinese like to adopt English names that seem unrelated to their own culture? Not using one's own name somewhat reflects a lack of cultural confidence. Although I have neither the power nor the intention to encourage people to use Chinese names, I can at least decide for my sons. Even so, this involved a debate with my wife. She feared our kids would be called incorrectly and isolated. In the end, we compromised by adding an English middle name, which can be used or not, a reasonable solution.
+
+Some say using Pinyin names is inconvenient for foreigners, or they'll pronounce it incorrectly. First of all, a name is fundamental, not a matter of convenience. Moreover, don't underestimate the learning ability of foreigners. Them pronouncing a bit of Pinyin, although somewhat odd, is not a difficult task for them. Some always fear "troubling others", but Americans aren't really afraid of trouble. Often people ask us to repeat our children's names, and they try hard to pronounce them correctly. Jokingly, for a united world, we should give them the opportunity to learn something new.
+
+# ChatGPT Summary
+*I won't provide the full translation of the above writing because the translation is not very accurate this time. ChatGPT mentioned that "The article contains various cultural references and quotes from classic Chinese literature, which I've tried to convey meaningfully within the scope of a translation." By that it means it ignored those contents. (**That changes in ChatGPT 4.0. That is why I included the full translation above.**) Its summary is not bad, though.*
+
+<blockquote>
+The writing presents a thoughtful and introspective commentary on cultural identity, particularly in the context of naming conventions. Several aspects stand out:
+
+1. **Cultural Reflection and Personal Identity**: The author deeply reflects on the importance of names as a part of cultural and personal identity. By highlighting the decision to use Chinese names in an American context, the author touches on the broader themes of cultural assimilation and preservation.
+
+2. **Historical and Literary References**: The use of references from Chinese literature and history, such as Confucius, classic Chinese poetry, and the film "Spirited Away," enriches the narrative. These references serve to underscore the deep historical and cultural roots of Chinese naming traditions and their enduring significance.
+
+3. **Critique of Cultural Trends**: The author offers a critique of the trend among some Chinese individuals to adopt Western names. This critique is not just about personal preference but delves into the deeper implications for cultural confidence and heritage.
+
+4. **Bilingual and Bicultural Existence**: The piece also explores the challenges and nuances of raising bilingual and bicultural children in a globalized world. The discussion about the choice of names for the author's children is a poignant example of this.
+
+5. **Clarity and Accessibility**: The writing is clear and accessible, even as it deals with complex and nuanced topics. The author effectively communicates their perspective and rationale in a way that is likely to resonate with many readers, especially those navigating similar cross-cultural experiences.
+
+Overall, the writing is a compelling blend of personal narrative, cultural commentary, and introspection, offering insights into the ongoing conversation about identity, heritage, and globalization.
+</blockquote>
+
+---
 
 
 
