@@ -62,7 +62,7 @@ Times change, circumstances differ. Against the backdrop of a growing national s
 
 In the movie "Spirited Away", the girl originally named "千寻" enters a mystical world and is renamed "千" by Yubaba. In this hidden world, forgetting one's original name means forgetting one's true self, never to return to the real world. I've always wondered, what's the difference between "千" and "千寻"? In Russian literature, characters often have numerous nicknames and terms of endearment, so the difference between "千" and "千寻" seems negligible. I checked Wikipedia to clear up my confusion, but just looking at the Chinese characters themselves didn't help, as the film's title is written as "千と千尋の神隠し". It's all Chinese characters. Probably their kana are different. “千” is written as (せん), while “千寻” including her surname is “荻野 千尋 (おぎの ちひろ)”. Okay, finally a difference.
 
-In this "hidden world" of the United States, I gave my sons Chinese names, written in Pinyin, as "Wen Qiao" and "Wen Yu". The names are derived from Zhuang Yuanchen's "Shuju Zi Nei Pian" from the Ming Dynasty:
+In this "hidden world" of the United States, I gave my sons Chinese names, written in Pinyin, as "Wen (ask) Qiao (woodcutter)" and "Wen (ask) Yu (fisherman)". The names are derived from Zhuang Yuanchen's "Shuju Zi Nei Pian" from the Ming Dynasty:
 
 <blockquote>
     Enter the mountains to ask the woodcutter, go into the waters to ask the fisherman. How can a sage not learn! If saints only befriend those better than themselves, then there are no friends in the world. Only those who learn from everyone can truly teach the world.
