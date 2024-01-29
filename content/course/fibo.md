@@ -212,7 +212,7 @@ We want to compare the three version of the implementation: recursive, iterative
 When the test case is n=1000 and we sample every hundred. We get the following result. Several observation:
 
 1. The linear algorithm leads until about $n=400$. Then its time consumption exceeds the other two algorithms.
-2. There are some fluctuation between $n=800$ to $n=1000$ in the recursive algorithm. You won't believe it takes less time to do $n=900$ than $n=800$, right? What happen in the test is that, the jobs of calculating $n=800$ or $n=900$ do not take too much of time, and it might be comparable to the background operating system scheduling. It could be the time time we have for $n=800$ is the actually calculation time plus the scheduling time. Actually, the testing result differs time to time. I attached another testing result showing the fluctuation happening somewhere else. The way to mitigate the phenomenon? Well, just use bigger number so that the actual jobs take more time to finish, so the scheduling time become negligible. 
+2. There are some fluctuation between $n=800$ to $n=1000$ in the recursive algorithm. You won't believe it takes less time to do $n=900$ than $n=800$, right? What happen in the test is that, the jobs of calculating $n=800$ or $n=900$ do not take too much of time, and it might be comparable to the background operating system scheduling. It could be the time we have for $n=800$ is the actually calculation time plus the scheduling time. Actually, the testing result differs time to time. I attached another testing result showing the fluctuation happening somewhere else. The way to mitigate the phenomenon? Well, just use bigger number so that the actual jobs take more time to finish, so the scheduling time become negligible. 
 
 <img src="/CSC482/files/fibo/1000.png" alt="Upto 1000th Fibonacci Number" style="border: 2px solid  gray;">
 
@@ -279,7 +279,7 @@ I asked ChatGPT to code the above formula into Python (Yes, it takes LaTex input
 # Final Remarks
 1. It is quite a learning experience for me to putting this up. 
 2. Teaching forces me to reflect. After so many semesters talking about the naive primary test not being polynomial, I finally realized that I did not treat the calculation of Fibonacci number in the same caliber. 
-3. ChatGPT does a fantastic job. No a single line of the above code is written by me; The codes are all by ChatGPT. But it takes some extra effort to make sure it does things correctly. See the [conversation](https://chat.openai.com/share/7661c246-3825-474f-98a5-5e269380e996) I had with ChatGPT. (Please ignore that part where I asked it to help my English writing.) Of course, I read quite some other things before I talked to ChatGPT: I knew all the algorithms already from other materials and I knew all the math I need. The more you know, the more helpful ChatGPT is. 
+3. ChatGPT does a fantastic job. Not a single line of the above code is written by me; The codes are all by ChatGPT. But it takes some extra effort to make sure it does things correctly. See the [conversation](https://chat.openai.com/share/7661c246-3825-474f-98a5-5e269380e996) I had with ChatGPT. (Please ignore that part where I asked it to help my English writing.) Of course, I read quite some other things before I talked to ChatGPT: I knew all the algorithms already from other materials and I knew all the math I need. The more you know, the more helpful ChatGPT is. 
 4. The future best programming language are Math and English.
 
 ---
