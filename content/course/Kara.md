@@ -5,7 +5,7 @@ slug: "CSC482/kara"
 math: mathjax
 ---
 ## The Father
-Every semester I teach Karatsuba algorithm by [Anatoly Karatsuba](https://en.wikipedia.org/wiki/Anatoly_Karatsuba) in the first or second lecture. Well, to impress my student how a normal task like integer multiplication can be improved by clever algorithms. I still remember the "Aha" moment of reading the algorithm. By using a small trick to save one multiplication in each stage, we can achieve a faster algorithm!
+Every semester I teach Karatsuba algorithm by [Anatoly Karatsuba](https://en.wikipedia.org/wiki/Anatoly_Karatsuba) in the first or second lecture. Well, to impress my students how a normal task like integer multiplication can be improved by clever algorithms. I still remember the "Aha" moment of reading the algorithm. By using a small trick to save one multiplication in each stage, we can achieve a faster algorithm!
 
 ## The Daughter
 But that is not the only Karatsuba having impact on me. When I was a PhD student, one thing I worked on is to use a computational model called Chemical Reaction Network (CRN), to compute real number. The Number that I extremely interested in computing was Euler's $\gamma$, which can be defined as
