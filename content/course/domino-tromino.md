@@ -9,6 +9,7 @@ math: mathjax
 {{< table_of_contents >}}
 
 
+
 # Tiling a $2\times n$ Board with Dominoes and Trominoes
 
 I assigned [Leetcode 790](https://leetcode.com/problems/domino-and-tromino-tiling/description/) as a Lab to my students. In this problem, we are tasked with finding the number of ways to tile a $2\times n$ board using dominoes and trominoes. Many online resources do not explain the deduction of the recurrence very well. So I decide to write one here.

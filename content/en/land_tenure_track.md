@@ -13,7 +13,8 @@ The target for my job hunting this time is to find a position at
 
 - good liberal arts colleges or something similar. The teaching load is usually 2+2+labs(0.5+0.5)=5, and they get good undergrads, so I can do some research with undergrads.
 - or research schools (ideally, with a PhD program). R1 is hard to get in immediately after graduation, so maybe some R2 place for this time.
-- 
+
+
 Actually, I also considered a few postdoc positions, like [Marie Curie Fellowship](https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships), for which I had contacted a French researcher and wrote a proposal on something I wanted to work on for the next few years. The evaluation is based on the proposal itself, without the need of even a letter from my advisor. The result came back in early February and I was rejected, but the result was not unexpected. The way my advisor put it
 
 <blockquote>
