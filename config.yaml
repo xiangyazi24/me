@@ -19,18 +19,15 @@ menu:
     - name: "Math ∩ CS"
       url: "/math/"
       weight: 2
-    - name: "Quantum"
-      url: "/quantum/"
-      weight: 3
     - name: "Course Notes"
       url: "/course/"
-      weight: 4
+      weight: 3
     - name: "中文"
       url: "/cn/"
-      weight: 5
+      weight: 4
     - name: "Homepage"
       url: "/"
-      weight: 6
+      weight: 5
   en:
 
     - name: "English"
@@ -39,18 +36,15 @@ menu:
     - name: "Math ∩ CS"
       url: "/math/"
       weight: 2
-    - name: "Quantum"
-      url: "/quantum/"
-      weight: 3
     - name: "Course Notes"
       url: "/course/"
-      weight: 4
+      weight: 3
     - name: "中文"
       url: "/cn/"
-      weight: 5
+      weight: 4
     - name: "Homepage"
       url: "/"
-      weight: 6
+      weight: 5
   cn:
     - name: "English"
       url: "/en/"
@@ -58,18 +52,15 @@ menu:
     - name: "Math ∩ CS"
       url: "/math/"
       weight: 2
-    - name: "Quantum"
-      url: "/quantum/"
-      weight: 3
     - name: "Course Notes"
       url: "/course/"
-      weight: 4
+      weight: 3
     - name: "中文"
       url: "/cn/"
-      weight: 5
+      weight: 4
     - name: "Homepage"
       url: "/"
-      weight: 6
+      weight: 5
 
   Math:
 
@@ -79,18 +70,15 @@ menu:
     - name: "Math ∩ CS"
       url: "/math/"
       weight: 2
-    - name: "Quantum"
-      url: "/quantum/"
-      weight: 3
     - name: "Course Notes"
       url: "/course/"
-      weight: 4
+      weight: 3
     - name: "中文"
       url: "/cn/"
-      weight: 5
+      weight: 4
     - name: "Homepage"
       url: "/"
-      weight: 6
+      weight: 5
 
   Quantum:
 
@@ -100,18 +88,15 @@ menu:
     - name: "Math ∩ CS"
       url: "/math/"
       weight: 2
-    - name: "Quantum"
-      url: "/quantum/"
-      weight: 3
     - name: "Course Notes"
       url: "/course/"
-      weight: 4
+      weight: 3
     - name: "中文"
       url: "/cn/"
-      weight: 5
+      weight: 4
     - name: "Homepage"
       url: "/"
-      weight: 6
+      weight: 5
 
 params:
   description: "Personal website of Xiang; 黄湘的个人网站"
