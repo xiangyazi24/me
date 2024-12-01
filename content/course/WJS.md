@@ -16,7 +16,7 @@ math: mathjax
 
 Let's schedule some jobs again! We have had a lab on job scheduling problem before and this time we consider jobs with weights. 
 
-The Lab is excerpted from Section 12.3 of [Algorithm Design and Applications](/docs/wsj.pdf) by Michael T. Goodrich and Roberto Tamassia. We also talked about weighted job scheduling in Kleinberg and Tardos. I will not repeat most of the contents in the books. I will just emphasis what I believe are the important aspects of the problem.
+The Lab is excerpted from Section 12.3 of [Algorithm Design and Applications](/images/wsj.pdf) by Michael T. Goodrich and Roberto Tamassia. We also talked about weighted job scheduling in Kleinberg and Tardos. I will not repeat most of the contents in the books. I will just emphasis what I believe are the important aspects of the problem.
 
 - **Input:** A list of jobs $L$. A job $i$ is specified by a triple: ($s_i$, $f_i$, $b_i$) meaning the starting time, finishing time, and the benefit of performing the job $i$.
 - **Output:** A selected subset of the jobs, so that
