@@ -8,7 +8,7 @@ math: mathjax
 - Dynamic Programming
 
 ## Problem Statement
-You can find the statement through (Beebrowd 1798)[https://judge.beecrowd.com/en/search?q=1798&for=problems] (You might need to login and search with the problem number). Note that you need to submit you code and report on Canvas for grading. I won't maintain the class page for the problem. You can just use the public page to test your code.
+You can find the statement through [Beebrowd 1798](https://judge.beecrowd.com/en/search?q=1798&for=problems) (You might need to login and search with the problem number). Note that you need to submit you code and report on Canvas for grading. I won't maintain the class page for the problem. You can just use the public page to test your code.
 **No ChatGPT generated codes are allowed for this task.** You can always play it for fun **after** submitting your work. 
 
 ## Some Ideas
