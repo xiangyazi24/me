@@ -4,7 +4,8 @@ date: 2026-03-29
 tags: [sequences, number-theory, ODE, golden-ratio, CRN, self-reference]
 author: Xiang Huang
 math: true
-status: draft
+mathjax: true
+draft: false
 ---
 
 *Some objects in mathematics contain themselves. The Cantor set is made of smaller Cantor sets. The Mandelbrot set has little Mandelbrot sets nested inside it. And then there is the Golomb sequence — a sequence that, in a very precise sense, is its own description.*
@@ -42,7 +43,7 @@ The self-describing property is beautiful, but it is not directly a formula. How
 <div class="theorem">
 
 **Theorem (Mallows's Recurrence).** The Golomb sequence satisfies
-$$a(1) = 1, \qquad a(n+1) = 1 + a\!\left(n + 1 - a(a(n))\right) \quad \text{for } n \geq 1.$$
+<div>$$a(1) = 1, \qquad a(n+1) = 1 + a\!\left(n + 1 - a(a(n))\right) \quad \text{for } n \geq 1.$$</div>
 
 </div>
 
@@ -76,14 +77,14 @@ Let $f: [1, \infty) \to [1, \infty)$ be a smooth, increasing function approximat
 
 Here is the key: the self-describing property says the value $n$ forms a run of length $a(n) \approx f(n)$. At position $m$ where $f(m) \approx n$, the value $n$ persists for about $f(n) \approx f(f(m))$ steps before increasing by 1. So the *rate of change* of $f$ at position $m$ is approximately 1 divided by the run length:
 
-$$f'(m) \approx \frac{1}{f(f(m))}.$$
+<div>$$f'(m) \approx \frac{1}{f(f(m))}.$$</div>
 
 Taking the limit, the natural continuous analogue of the Golomb sequence satisfies the **functional-differential equation**:
 
 <div class="theorem">
 
 **The Golomb ODE.**
-$$f'(t) = \frac{1}{f(f(t))}$$
+<div>$$f'(t) = \frac{1}{f(f(t))}$$</div>
 
 </div>
 
@@ -105,19 +106,19 @@ This is a standard technique for equations with scaling symmetry — try $f(t) =
 
 **Right side:** First, $f(t) = A t^\alpha$, so $f(f(t)) = f(A t^\alpha) = A (A t^\alpha)^\alpha = A^{1+\alpha} t^{\alpha^2}.$ Then:
 
-$$\frac{1}{f(f(t))} = \frac{1}{A^{1+\alpha} t^{\alpha^2}}.$$
+<div>$$\frac{1}{f(f(t))} = \frac{1}{A^{1+\alpha} t^{\alpha^2}}.$$</div>
 
 Setting left equal to right:
 
-$$A \alpha \, t^{\alpha - 1} = \frac{1}{A^{1+\alpha} \, t^{\alpha^2}}.$$
+<div>$$A \alpha \, t^{\alpha - 1} = \frac{1}{A^{1+\alpha} \, t^{\alpha^2}}.$$</div>
 
 For this to hold for *all* $t > 0$, the powers of $t$ on both sides must match:
 
-$$\alpha - 1 = -\alpha^2 \qquad \implies \qquad \alpha^2 + \alpha - 1 = 0.$$
+<div>$$\alpha - 1 = -\alpha^2 \qquad \implies \qquad \alpha^2 + \alpha - 1 = 0.$$</div>
 
 Stop. Look at that equation. The positive root is:
 
-$$\alpha = \frac{-1 + \sqrt{5}}{2} = \varphi - 1 \approx 0.618$$
+<div>$$\alpha = \frac{-1 + \sqrt{5}}{2} = \varphi - 1 \approx 0.618$$</div>
 
 where $\varphi = \frac{1+\sqrt{5}}{2}$ is the golden ratio. The negative root, $\alpha = -\varphi$, gives a decreasing function and is ruled out since $a(n)$ is increasing.
 
@@ -125,12 +126,12 @@ This is the golden ratio appearing not from any deliberate construction, but fro
 
 **The coefficient $A$.** Once we know $\alpha = \varphi - 1$, the coefficient condition $A^{2+\alpha} \alpha = 1$ gives, after simplification using golden ratio identities ($\varphi^2 = \varphi + 1$, $1/\varphi = \varphi - 1$):
 
-$$A = \varphi^{2 - \varphi} \approx 1.2018.$$
+<div>$$A = \varphi^{2 - \varphi} \approx 1.2018.$$</div>
 
 <div class="theorem">
 
 **Theorem (Marcus–Fine; Vardi 1992).** The Golomb sequence satisfies:
-$$a(n) = \varphi^{2-\varphi} \, n^{\varphi - 1} + O\!\left(\frac{n^{\varphi-1}}{\log n}\right)$$
+<div>$$a(n) = \varphi^{2-\varphi} \, n^{\varphi - 1} + O\!\left(\frac{n^{\varphi-1}}{\log n}\right)$$</div>
 where $\varphi = \frac{1+\sqrt{5}}{2}$ is the golden ratio.
 
 </div>
@@ -155,13 +156,13 @@ For the scaling solution $f(t) = \varphi^{2-\varphi} t^{\varphi - 1}$, we are lo
 
 Setting $\varphi^{2-\varphi} p^{\varphi-1} = p$, we get $p^{2-\varphi} = \varphi^{2-\varphi}$, and so:
 
-$$p = \varphi.$$
+<div>$$p = \varphi.$$</div>
 
 The golden ratio is the fixed point of the scaling solution. At $t = \varphi$, the solution passes through the line $y = x$.
 
 Why does this matter? At a fixed point, the self-referential structure of the ODE collapses completely:
 
-$$f(f(\varphi)) = f(\varphi) = \varphi.$$
+<div>$$f(f(\varphi)) = f(\varphi) = \varphi.$$</div>
 
 So the ODE at the fixed point simply reads $f'(\varphi) = 1/\varphi$. And indeed, we can check: $f_0'(\varphi) = (\varphi - 1) \cdot \varphi^{(2-\varphi) + (\varphi - 2)} = (\varphi - 1) \cdot \varphi^0 = \varphi - 1 = 1/\varphi.$ ✓
 
@@ -179,7 +180,7 @@ The answer is: **no**, the Golomb ODE cannot be reduced to any polynomial ODE in
 
 Since the ODE says $f'(t) = 1/f(f(t))$, define $u(t) = f'(t)$. The ODE gives us:
 
-$$f(f(t)) = \frac{1}{u(t)}.$$
+<div>$$f(f(t)) = \frac{1}{u(t)}.$$</div>
 
 Now try to differentiate to get an ODE for $u$. Let $g(t) = f^{\circ n}(t)$ denote the $n$-fold composition.
 
@@ -191,13 +192,13 @@ The second composition is $1/u(t)$.
 
 Differentiating the identity $f(f(t)) = 1/u$:
 
-$$f'(f(t)) \cdot f'(t) = -\frac{u'}{u^2}.$$
+<div>$$f'(f(t)) \cdot f'(t) = -\frac{u'}{u^2}.$$</div>
 
 Now $f'(s) = 1/f(f(s))$ for any $s$. At $s = f(t)$, this gives $f'(f(t)) = 1/f(f(f(t))) = 1/g_3(t)$. So:
 
 <div>
 
-$$\frac{u}{g_3} = -\frac{u'}{u^2} \qquad \implies \qquad g_3 = -\frac{u^3}{u'}.$$
+<div>$$\frac{u}{g_3} = -\frac{u'}{u^2} \qquad \implies \qquad g_3 = -\frac{u^3}{u'}.$$</div>
 
 </div>
 
@@ -205,7 +206,7 @@ More generally, one can show a recurrence on the iterated compositions. From the
 
 <div>
 
-$$g_{n+2}(t) = \frac{g_n'(t)}{g_{n+1}'(t)}.$$
+<div>$$g_{n+2}(t) = \frac{g_n'(t)}{g_{n+1}'(t)}.$$</div>
 
 </div>
 
@@ -237,7 +238,7 @@ The second approach is more local. At the fixed point $p = \varphi$, the nonloca
 
 <div>
 
-$$f(t) = \varphi + c_1(t - \varphi) + c_2(t - \varphi)^2 + c_3(t - \varphi)^3 + \cdots$$
+<div>$$f(t) = \varphi + c_1(t - \varphi) + c_2(t - \varphi)^2 + c_3(t - \varphi)^3 + \cdots$$</div>
 
 </div>
 
@@ -249,7 +250,7 @@ To find the second coefficient, substitute into the ODE and match terms. With $s
 
 <div>
 
-$$f(f(t)) = \varphi + c_1^2 s + (c_1 c_2 + c_2 c_1^2) s^2 + O(s^3)$$
+<div>$$f(f(t)) = \varphi + c_1^2 s + (c_1 c_2 + c_2 c_1^2) s^2 + O(s^3)$$</div>
 
 </div>
 
@@ -259,7 +260,7 @@ and
 
 <div>
 
-$$\frac{1}{f(f(t))} = \frac{1}{\varphi} - \frac{c_1^2}{\varphi^2} s + O(s^2).$$
+<div>$$\frac{1}{f(f(t))} = \frac{1}{\varphi} - \frac{c_1^2}{\varphi^2} s + O(s^2).$$</div>
 
 </div>
 
@@ -267,7 +268,7 @@ Matching the coefficient of $s$ with the derivative $f'(t)$:
 
 <div>
 
-$$2c_2 = -\frac{c_1^2}{\varphi^2} = -\frac{1}{\varphi^4} \qquad \implies \qquad c_2 = -\frac{1}{2\varphi^4}.$$
+<div>$$2c_2 = -\frac{c_1^2}{\varphi^2} = -\frac{1}{\varphi^4} \qquad \implies \qquad c_2 = -\frac{1}{2\varphi^4}.$$</div>
 
 </div>
 
@@ -295,7 +296,7 @@ The symbolic method requires a *combinatorial class*: a set of objects with a si
 
 Even if we ignore that and look at the ordinary generating function $F(x) = \sum_{n \geq 1} a(n) x^n$, we run into a wall. The function satisfies the identity:
 
-$$F(x) = \sum_{k \geq 1} x^{a(k)}.$$
+<div>$$F(x) = \sum_{k \geq 1} x^{a(k)}.$$</div>
 
 This is not a standard functional equation — the values $a(k)$ appear as *exponents*, not coefficients. And any equation encoding the self-referential recurrence would involve something like $F(F(x))$, a composition of generating functions that is far outside the algebraic/D-finite framework that the symbolic method handles.
 
@@ -330,4 +331,11 @@ The sequence began as a puzzle — something that describes itself. It ends (at 
 
 ---
 
-*References: Golomb (1966), McKiernan (1957), Vardi (1992), Pétermann (1995, 1996), Pétermann–Rémy (1998), Pétermann–Rémy–Vardi (1999, 2001), Flajolet–Sedgewick (2009).*
+*References: Golomb (1966), McKiernan (1957), Vardi (1992), Pétermann (1995, 1996), Pétermann–Rémy (1998), Pétermann–Rémy–Vardi (1999, 2001), Flajolet–Sedgewick (2009).*<div>
+8143781437
+</div><div>
+81437
+81437
+</div><div>
+8143781437
+</div>
